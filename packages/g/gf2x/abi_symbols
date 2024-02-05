@@ -1,0 +1,8 @@
+libgf2x.so.3:gf2x_lib_version_code
+libgf2x.so.3:gf2x_mul
+libgf2x.so.3:gf2x_mul_pool_clear
+libgf2x.so.3:gf2x_mul_pool_init
+libgf2x.so.3:gf2x_mul_r
+libgf2x.so.3:gf2x_mul_toom
+libgf2x.so.3:gf2x_toom_gpl_status
+libgf2x.so.3:gf2x_toomspace

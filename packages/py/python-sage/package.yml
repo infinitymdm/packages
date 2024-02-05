@@ -1,0 +1,62 @@
+name       : python-sage
+version    : 10.2
+release    : 1
+source     :
+    - https://github.com/sagemath/sage/archive/refs/tags/10.2.tar.gz : e7125f13495e1068edab73735aca7f9b2c655688096e9d109e628c023e76411f
+homepage   : https://sagemath.org
+license    : GPL-2.0-or-later
+component  : programming.perl
+summary    : A free open source alternative to Magma, Maple, Mathematica, and Matlab.
+description: |
+    SageMath is a free open-source mathematics software system licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined power through a common, Python-based language or directly via interfaces or wrappers.
+builddeps  :
+    - pkgconfig(linbox)
+    - pkgconfig(openblas)
+    - pkgconfig(gsl)
+    - cython
+    - libboost-devel
+    - python-jinja
+    - python-pkgconfig
+rundeps    :
+    - imagemagick
+    - linbox
+    - texlive
+environment: |
+    export PYTHONPATH="$PWD"/pkgs/sage-setup
+    export SAGEPKGS=(
+        standard
+        bliss
+        coxeter3
+        mcqd
+        meataxe
+        sirocco
+        tdlib
+    )
+setup      : |
+    which python
+    python --version
+    ./bootstrap
+    # for SAGEPKG in ${SAGEPKGS[@]}; do
+    #     pushd pkgs/sagemath-$SAGEPKG
+    #     sed -i '2i # -*- coding: utf-8 -*-' setup.py
+    #     popd
+    # done
+build      : |
+    for SAGEPKG in ${SAGEPKGS[@]}; do
+        pushd pkgs/sagemath-$SAGEPKG
+        python3 setup.py build
+        popd
+    done
+install    : |
+    for SAGEPKG in ${SAGEPKGS[@]}; do
+        pushd $builddir/pkgs/sagemath-$SAGEPKG
+        python3 setup.py install --root=$installdir
+        popd
+    done
+
+    # Fix symlink to assets
+    _pythonpath=`python -c "from sysconfig import get_path; print(get_path('platlib'))"`
+    for asset in `ls $builddir/src/sage/ext_data/notebook-ipython`; do
+        rm $installdir/usr/share/jupyter/kernels/sagemath/$asset
+        ln -s $_pythonpath/sage/ext_data/notebook-ipython/$asset $installdir/usr/share/jupyter/kernels/sagemath/
+    done

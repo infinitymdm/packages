@@ -1,0 +1,22 @@
+name       : fflas-ffpack
+version    : 2.5.0
+release    : 1
+source     :
+    - https://github.com/linbox-team/fflas-ffpack/archive/refs/tags/v2.5.0.tar.gz : 50e8a02c88bb35dedd6c4b1870dca40b62e0a79fff9557f82cff334b39ac9fc1
+homepage   : https://linbox-team.github.io/fflas-ffpack/
+license    : LGPL-2.1-or-later
+component  : office.scientific
+summary    : A library for dense linear algebra over word-size finite fields
+description: |
+    FFLAS-FFPACK is a LGPL-2.1+ source code library for basic linear algebra operations over a finite field.
+builddeps  :
+    - pkgconfig(lapack)
+    - pkgconfig(givaro)
+    - pkgconfig(openblas)
+setup      : |
+    %reconfigure --enable-precompilation --with-blas-libs="-lblas -llapack"
+    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool # Fix overlinking
+build      : |
+    %make
+install    : |
+    %make_install

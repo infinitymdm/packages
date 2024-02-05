@@ -1,0 +1,128 @@
+<PISI>
+    <Source>
+        <Name>pari</Name>
+        <Homepage>https://pari.math.u-bordeaux.fr/</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0-or-later</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">Computer algebra system designed for fast computations in number theory</Summary>
+        <Description xml:lang="en">PARI/GP is a cross platform and open-source computer algebra system designed for fast computations in number theory: factorizations, algebraic number theory, elliptic curves, modular forms, L functions... It also contains a wealth of functions to compute with mathematical entities such as matrices, polynomials, power series, algebraic numbers, etc., and a lot of transcendental functions as well as numerical sumation and integration routines.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>pari</Name>
+        <Summary xml:lang="en">Computer algebra system designed for fast computations in number theory</Summary>
+        <Description xml:lang="en">PARI/GP is a cross platform and open-source computer algebra system designed for fast computations in number theory: factorizations, algebraic number theory, elliptic curves, modular forms, L functions... It also contains a wealth of functions to compute with mathematical entities such as matrices, polynomials, power series, algebraic numbers, etc., and a lot of transcendental functions as well as numerical sumation and integration routines.
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/gp</Path>
+            <Path fileType="executable">/usr/bin/gp-2.15</Path>
+            <Path fileType="executable">/usr/bin/gphelp</Path>
+            <Path fileType="executable">/usr/bin/tex2mail</Path>
+            <Path fileType="library">/usr/lib/libpari-gmp-tls.so.2.15.4</Path>
+            <Path fileType="library">/usr/lib/libpari-gmp-tls.so.8</Path>
+            <Path fileType="library">/usr/lib/pari/pari.cfg</Path>
+            <Path fileType="man">/usr/share/man/man1/gp-2.15.1</Path>
+            <Path fileType="man">/usr/share/man/man1/gp.1</Path>
+            <Path fileType="man">/usr/share/man/man1/gphelp.1</Path>
+            <Path fileType="man">/usr/share/man/man1/pari.1</Path>
+            <Path fileType="man">/usr/share/man/man1/tex2mail.1</Path>
+            <Path fileType="data">/usr/share/pari/PARI/822.pm</Path>
+            <Path fileType="data">/usr/share/pari/doc/INSTALL.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/appb.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/appd.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/develop.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/develop.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/libpari.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/parallel.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/paricfg.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/parimacro.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/pdfmacs.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/refcard-ell.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/refcard-lfun.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/refcard-mf.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/refcard-nf.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/refcard.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/refcard.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/translations</Path>
+            <Path fileType="data">/usr/share/pari/doc/tutorial-mf.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/tutorial-mf.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/tutorial.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/tutorial.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/users.dvi</Path>
+            <Path fileType="data">/usr/share/pari/doc/users.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/usersch1.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/usersch2.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/usersch3.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/usersch4.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/usersch5.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/usersch6.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/usersch7.tex</Path>
+            <Path fileType="data">/usr/share/pari/doc/usersch8.tex</Path>
+            <Path fileType="data">/usr/share/pari/examples/EXPLAIN</Path>
+            <Path fileType="data">/usr/share/pari/examples/Inputrc</Path>
+            <Path fileType="data">/usr/share/pari/examples/Makefile</Path>
+            <Path fileType="data">/usr/share/pari/examples/bench.gp</Path>
+            <Path fileType="data">/usr/share/pari/examples/cl.gp</Path>
+            <Path fileType="data">/usr/share/pari/examples/classno.gp</Path>
+            <Path fileType="data">/usr/share/pari/examples/contfrac.gp</Path>
+            <Path fileType="data">/usr/share/pari/examples/extgcd.c</Path>
+            <Path fileType="data">/usr/share/pari/examples/lucas.gp</Path>
+            <Path fileType="data">/usr/share/pari/examples/rho.gp</Path>
+            <Path fileType="data">/usr/share/pari/examples/squfof.gp</Path>
+            <Path fileType="data">/usr/share/pari/examples/taylor.gp</Path>
+            <Path fileType="data">/usr/share/pari/misc/README</Path>
+            <Path fileType="data">/usr/share/pari/misc/color.dft</Path>
+            <Path fileType="data">/usr/share/pari/misc/gpalias</Path>
+            <Path fileType="data">/usr/share/pari/misc/gpflog</Path>
+            <Path fileType="data">/usr/share/pari/misc/gprc.dft</Path>
+            <Path fileType="data">/usr/share/pari/misc/xgp</Path>
+            <Path fileType="data">/usr/share/pari/pari.desc</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>pari-devel</Name>
+        <Summary xml:lang="en">Development files for pari</Summary>
+        <Description xml:lang="en">PARI/GP is a cross platform and open-source computer algebra system designed for fast computations in number theory: factorizations, algebraic number theory, elliptic curves, modular forms, L functions... It also contains a wealth of functions to compute with mathematical entities such as matrices, polynomials, power series, algebraic numbers, etc., and a lot of transcendental functions as well as numerical sumation and integration routines.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">pari</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/pari/genpari.h</Path>
+            <Path fileType="header">/usr/include/pari/mpinl.h</Path>
+            <Path fileType="header">/usr/include/pari/pari.h</Path>
+            <Path fileType="header">/usr/include/pari/paricast.h</Path>
+            <Path fileType="header">/usr/include/pari/paricfg.h</Path>
+            <Path fileType="header">/usr/include/pari/paricom.h</Path>
+            <Path fileType="header">/usr/include/pari/paridbglvl.h</Path>
+            <Path fileType="header">/usr/include/pari/paridecl.h</Path>
+            <Path fileType="header">/usr/include/pari/parierr.h</Path>
+            <Path fileType="header">/usr/include/pari/parigen.h</Path>
+            <Path fileType="header">/usr/include/pari/pariinl.h</Path>
+            <Path fileType="header">/usr/include/pari/parimt.h</Path>
+            <Path fileType="header">/usr/include/pari/parinf.h</Path>
+            <Path fileType="header">/usr/include/pari/pariold.h</Path>
+            <Path fileType="header">/usr/include/pari/paripriv.h</Path>
+            <Path fileType="header">/usr/include/pari/paristio.h</Path>
+            <Path fileType="header">/usr/include/pari/parisys.h</Path>
+            <Path fileType="header">/usr/include/pari/paritune.h</Path>
+            <Path fileType="library">/usr/lib/libpari.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-01-21</Date>
+            <Version>2.15.4</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

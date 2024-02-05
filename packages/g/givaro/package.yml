@@ -1,0 +1,18 @@
+name       : givaro
+version    : 4.2.0
+release    : 1
+source     :
+    - https://github.com/linbox-team/givaro/archive/refs/tags/v4.2.0.tar.gz : dca23a928e4704f045848fce884fe49ce09a8de7ebf750b87c807ca4e0facedd
+homepage   : http://givaro.forge.imag.fr/
+license    : CECILL-B
+component  : office.scientific
+summary    : C++ library for arithmetic and algebraic computations
+description: |
+    C++ library for arithmetic and algebraic computations
+setup      : |
+    %reconfigure --enable-shared
+    sed -i "s/uint64_t/ unsigned long long int/g" src/library/poly1/givdegree.h
+build      : |
+    %make
+install    : |
+    %make_install

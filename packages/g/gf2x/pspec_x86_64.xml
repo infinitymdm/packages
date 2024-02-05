@@ -1,0 +1,66 @@
+<PISI>
+    <Source>
+        <Name>gf2x</Name>
+        <Homepage>https://gitlab.inria.fr/gf2x/gf2x</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0-or-later</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">A library for multiplying polynomials over the binary field</Summary>
+        <Description xml:lang="en">A library for multiplying polynomials over the binary field
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>gf2x</Name>
+        <Summary xml:lang="en">A library for multiplying polynomials over the binary field</Summary>
+        <Description xml:lang="en">A library for multiplying polynomials over the binary field
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/libgf2x.so.3</Path>
+            <Path fileType="library">/usr/lib64/libgf2x.so.3.0.0</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>gf2x-devel</Name>
+        <Summary xml:lang="en">Development files for gf2x</Summary>
+        <Description xml:lang="en">A library for multiplying polynomials over the binary field
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">gf2x</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/gf2x.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x-config-export.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x-config.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x-impl-export.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x-small.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x-thresholds.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul1.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul2.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul3.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul4.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul5.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul6.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul7.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul8.h</Path>
+            <Path fileType="header">/usr/include/gf2x/gf2x_mul9.h</Path>
+            <Path fileType="library">/usr/lib64/libgf2x.a</Path>
+            <Path fileType="library">/usr/lib64/libgf2x.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/gf2x.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-01-22</Date>
+            <Version>1.3.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

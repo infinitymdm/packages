@@ -1,0 +1,313 @@
+<PISI>
+    <Source>
+        <Name>ntl</Name>
+        <Homepage>https://www.shoup.net/ntl/</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Packager>
+        <License>LGPL-2.1-or-later</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">A Library for doing Number Theory</Summary>
+        <Description xml:lang="en">NTL is a high-performance, portable C++ library providing data structures and algorithms for manipulating signed, arbitrary length integers, and for vectors, matrices, and polynomials over the integers and over finite fields.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>ntl</Name>
+        <Summary xml:lang="en">A Library for doing Number Theory</Summary>
+        <Description xml:lang="en">NTL is a high-performance, portable C++ library providing data structures and algorithms for manipulating signed, arbitrary length integers, and for vectors, matrices, and polynomials over the integers and over finite fields.
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/libntl.so.44</Path>
+            <Path fileType="library">/usr/lib/libntl.so.44.0.1</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/BasicThreadPool.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/BasicThreadPool.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2E.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2E.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2EX.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2EX.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2EXFactoring.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2EXFactoring.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2X.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2X.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2XFactoring.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2XFactoring.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2XVec.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/GF2XVec.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/HNF.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/HNF.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/LLL.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/LLL.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/Lazy.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/Lazy.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/LazyTable.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/LazyTable.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/RR.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/RR.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/SmartPtr.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/SmartPtr.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZVec.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZVec.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZX.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZX.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZXFactoring.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZXFactoring.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_limbs.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_limbs.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_p.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_p.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pE.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pE.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pEX.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pEX.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pEXFactoring.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pEXFactoring.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pX.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pX.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pXFactoring.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/ZZ_pXFactoring.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/arrow1.gif</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/arrow2.gif</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/arrow3.gif</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/config.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/conversions.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/copying.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/flags.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_p.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_p.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pE.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pE.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pEX.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pEX.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pEXFactoring.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pEXFactoring.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pX.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pX.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pXFactoring.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/lzz_pXFactoring.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_GF2.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_GF2.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_GF2E.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_GF2E.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_RR.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_RR.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_ZZ.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_ZZ.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_ZZ_p.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_ZZ_p.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_ZZ_pE.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_ZZ_pE.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_lzz_p.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_lzz_p.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_lzz_pE.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_lzz_pE.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_poly_ZZ.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_poly_ZZ.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_poly_ZZ_p.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_poly_ZZ_p.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_poly_lzz_p.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/mat_poly_lzz_p.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/matrix.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/matrix.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/names.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/pair.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/pair.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/quad_float.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/quad_float.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/sedscript.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tools.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tools.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-ack.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-changes.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-ex1.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-ex2.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-ex3.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-ex4.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-ex5.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-ex6.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-ex7.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-examples.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-gf2x.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-gmp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-impl.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-intro.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-modules.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-roadmap.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-struct.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-time.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-tips.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-unix.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour-win.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/tour.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_GF2.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_GF2.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_GF2E.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_GF2E.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_RR.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_RR.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_ZZ.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_ZZ.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_ZZ_p.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_ZZ_p.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_ZZ_pE.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_ZZ_pE.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_lzz_p.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_lzz_p.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_lzz_pE.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vec_lzz_pE.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vector.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/vector.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/version.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/version.txt</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/xdouble.cpp.html</Path>
+            <Path fileType="doc">/usr/share/doc/NTL/xdouble.txt</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>ntl-devel</Name>
+        <Summary xml:lang="en">Development files for ntl</Summary>
+        <Description xml:lang="en">NTL is a high-performance, portable C++ library providing data structures and algorithms for manipulating signed, arbitrary length integers, and for vectors, matrices, and polynomials over the integers and over finite fields.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">ntl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/NTL/ALL_FEATURES.h</Path>
+            <Path fileType="header">/usr/include/NTL/BasicThreadPool.h</Path>
+            <Path fileType="header">/usr/include/NTL/ConfigLog.h</Path>
+            <Path fileType="header">/usr/include/NTL/FFT.h</Path>
+            <Path fileType="header">/usr/include/NTL/FFT_impl.h</Path>
+            <Path fileType="header">/usr/include/NTL/FacVec.h</Path>
+            <Path fileType="header">/usr/include/NTL/GF2.h</Path>
+            <Path fileType="header">/usr/include/NTL/GF2E.h</Path>
+            <Path fileType="header">/usr/include/NTL/GF2EX.h</Path>
+            <Path fileType="header">/usr/include/NTL/GF2EXFactoring.h</Path>
+            <Path fileType="header">/usr/include/NTL/GF2X.h</Path>
+            <Path fileType="header">/usr/include/NTL/GF2XFactoring.h</Path>
+            <Path fileType="header">/usr/include/NTL/GF2XVec.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_AES_NI.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_ALIGNED_ARRAY.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_AVX.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_AVX2.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_AVX512F.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_BUILTIN_CLZL.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_CHRONO_TIME.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_COPY_TRAITS1.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_COPY_TRAITS2.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_FMA.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_KMA.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_LL_TYPE.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_MACOS_TIME.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_PCLMUL.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_POSIX_TIME.h</Path>
+            <Path fileType="header">/usr/include/NTL/HAVE_SSSE3.h</Path>
+            <Path fileType="header">/usr/include/NTL/HNF.h</Path>
+            <Path fileType="header">/usr/include/NTL/LLL.h</Path>
+            <Path fileType="header">/usr/include/NTL/Lazy.h</Path>
+            <Path fileType="header">/usr/include/NTL/LazyTable.h</Path>
+            <Path fileType="header">/usr/include/NTL/MatPrime.h</Path>
+            <Path fileType="header">/usr/include/NTL/PD.h</Path>
+            <Path fileType="header">/usr/include/NTL/PackageInfo.h</Path>
+            <Path fileType="header">/usr/include/NTL/REPORT_ALL_FEATURES.h</Path>
+            <Path fileType="header">/usr/include/NTL/RR.h</Path>
+            <Path fileType="header">/usr/include/NTL/SmartPtr.h</Path>
+            <Path fileType="header">/usr/include/NTL/WordVector.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZ.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZVec.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZX.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZXFactoring.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZ_limbs.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZ_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZ_pE.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZ_pEX.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZ_pEXFactoring.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZ_pX.h</Path>
+            <Path fileType="header">/usr/include/NTL/ZZ_pXFactoring.h</Path>
+            <Path fileType="header">/usr/include/NTL/config.h</Path>
+            <Path fileType="header">/usr/include/NTL/ctools.h</Path>
+            <Path fileType="header">/usr/include/NTL/fileio.h</Path>
+            <Path fileType="header">/usr/include/NTL/gmp_aux.h</Path>
+            <Path fileType="header">/usr/include/NTL/linux_s390x.h</Path>
+            <Path fileType="header">/usr/include/NTL/lip.h</Path>
+            <Path fileType="header">/usr/include/NTL/lzz_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/lzz_pE.h</Path>
+            <Path fileType="header">/usr/include/NTL/lzz_pEX.h</Path>
+            <Path fileType="header">/usr/include/NTL/lzz_pEXFactoring.h</Path>
+            <Path fileType="header">/usr/include/NTL/lzz_pX.h</Path>
+            <Path fileType="header">/usr/include/NTL/lzz_pXFactoring.h</Path>
+            <Path fileType="header">/usr/include/NTL/mach_desc.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_GF2.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_GF2E.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_RR.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_ZZ.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_ZZ_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_ZZ_pE.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_lzz_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_lzz_pE.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_poly_ZZ.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_poly_ZZ_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/mat_poly_lzz_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/matrix.h</Path>
+            <Path fileType="header">/usr/include/NTL/new.h</Path>
+            <Path fileType="header">/usr/include/NTL/pair.h</Path>
+            <Path fileType="header">/usr/include/NTL/pair_GF2EX_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/pair_GF2X_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/pair_ZZX_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/pair_ZZ_pEX_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/pair_ZZ_pX_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/pair_lzz_pEX_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/pair_lzz_pX_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/pd_FFT.h</Path>
+            <Path fileType="header">/usr/include/NTL/quad_float.h</Path>
+            <Path fileType="header">/usr/include/NTL/sp_arith.h</Path>
+            <Path fileType="header">/usr/include/NTL/thread.h</Path>
+            <Path fileType="header">/usr/include/NTL/tools.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_GF2.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_GF2E.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_GF2XVec.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_RR.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_ZZ.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_ZZVec.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_ZZ_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_ZZ_pE.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_double.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_lzz_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_lzz_pE.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_quad_float.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_ulong.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_GF2.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_GF2E.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_RR.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_ZZ.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_ZZ_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_ZZ_pE.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_long.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_lzz_p.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_lzz_pE.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_vec_ulong.h</Path>
+            <Path fileType="header">/usr/include/NTL/vec_xdouble.h</Path>
+            <Path fileType="header">/usr/include/NTL/vector.h</Path>
+            <Path fileType="header">/usr/include/NTL/version.h</Path>
+            <Path fileType="header">/usr/include/NTL/xdouble.h</Path>
+            <Path fileType="library">/usr/lib/libntl.a</Path>
+            <Path fileType="library">/usr/lib/libntl.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-01-22</Date>
+            <Version>11.5.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

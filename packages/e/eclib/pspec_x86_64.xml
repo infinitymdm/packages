@@ -1,0 +1,178 @@
+<PISI>
+    <Source>
+        <Name>eclib</Name>
+        <Homepage>https://common-lisp.net/project/ecl/</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0-or-later</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">Tools for elliptic curves</Summary>
+        <Description xml:lang="en">The eclib package includes mwrank (for 2-descent on elliptic curves over Q) and modular symbol code used to create the elliptic curve database.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>eclib</Name>
+        <Summary xml:lang="en">Tools for elliptic curves</Summary>
+        <Description xml:lang="en">The eclib package includes mwrank (for 2-descent on elliptic curves over Q) and modular symbol code used to create the elliptic curve database.
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/aplist</Path>
+            <Path fileType="executable">/usr/bin/checkap</Path>
+            <Path fileType="executable">/usr/bin/cubics</Path>
+            <Path fileType="executable">/usr/bin/ecnf</Path>
+            <Path fileType="executable">/usr/bin/h1bsd</Path>
+            <Path fileType="executable">/usr/bin/h1bsdcurisog</Path>
+            <Path fileType="executable">/usr/bin/h1clist</Path>
+            <Path fileType="executable">/usr/bin/h1curve</Path>
+            <Path fileType="executable">/usr/bin/h1first</Path>
+            <Path fileType="executable">/usr/bin/indep_test</Path>
+            <Path fileType="executable">/usr/bin/list_cubics</Path>
+            <Path fileType="executable">/usr/bin/moreap</Path>
+            <Path fileType="executable">/usr/bin/mwrank</Path>
+            <Path fileType="executable">/usr/bin/nfcount</Path>
+            <Path fileType="executable">/usr/bin/nfhpcurve</Path>
+            <Path fileType="executable">/usr/bin/nfhpmcurve</Path>
+            <Path fileType="executable">/usr/bin/pcurve</Path>
+            <Path fileType="executable">/usr/bin/point_search</Path>
+            <Path fileType="executable">/usr/bin/qexp</Path>
+            <Path fileType="executable">/usr/bin/quartic_points</Path>
+            <Path fileType="executable">/usr/bin/reduce_cubics</Path>
+            <Path fileType="executable">/usr/bin/reduce_quartics</Path>
+            <Path fileType="executable">/usr/bin/solve_conic</Path>
+            <Path fileType="executable">/usr/bin/solve_legendre</Path>
+            <Path fileType="library">/usr/lib64/libec.so.10</Path>
+            <Path fileType="library">/usr/lib64/libec.so.10.3.0</Path>
+            <Path fileType="doc">/usr/share/doc/eclib/g0n.txt</Path>
+            <Path fileType="doc">/usr/share/doc/eclib/howto.txt</Path>
+            <Path fileType="doc">/usr/share/doc/eclib/mwrank/mwrank.changes</Path>
+            <Path fileType="doc">/usr/share/doc/eclib/mwrank/mwrank.info</Path>
+            <Path fileType="doc">/usr/share/doc/eclib/mwrank/mwrank.options</Path>
+            <Path fileType="doc">/usr/share/doc/eclib/mwrank/mwrank.readme</Path>
+            <Path fileType="doc">/usr/share/doc/eclib/progs.txt</Path>
+            <Path fileType="man">/usr/share/man/man1/mwrank.1</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>eclib-devel</Name>
+        <Summary xml:lang="en">Development files for eclib</Summary>
+        <Description xml:lang="en">The eclib package includes mwrank (for 2-descent on elliptic curves over Q) and modular symbol code used to create the elliptic curve database.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">eclib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/eclib/GetOpt.h</Path>
+            <Path fileType="header">/usr/include/eclib/arith.h</Path>
+            <Path fileType="header">/usr/include/eclib/bigcomplex.h</Path>
+            <Path fileType="header">/usr/include/eclib/bigrat.h</Path>
+            <Path fileType="header">/usr/include/eclib/bitspace.h</Path>
+            <Path fileType="header">/usr/include/eclib/compproc.h</Path>
+            <Path fileType="header">/usr/include/eclib/conic.h</Path>
+            <Path fileType="header">/usr/include/eclib/cperiods.h</Path>
+            <Path fileType="header">/usr/include/eclib/cubic.h</Path>
+            <Path fileType="header">/usr/include/eclib/curve.h</Path>
+            <Path fileType="header">/usr/include/eclib/curvemod.h</Path>
+            <Path fileType="header">/usr/include/eclib/curvesort.h</Path>
+            <Path fileType="header">/usr/include/eclib/cusp.h</Path>
+            <Path fileType="header">/usr/include/eclib/desc2.h</Path>
+            <Path fileType="header">/usr/include/eclib/descent.h</Path>
+            <Path fileType="header">/usr/include/eclib/divpol.h</Path>
+            <Path fileType="header">/usr/include/eclib/egr.h</Path>
+            <Path fileType="header">/usr/include/eclib/elog.h</Path>
+            <Path fileType="header">/usr/include/eclib/ffmod.h</Path>
+            <Path fileType="header">/usr/include/eclib/fixc6.h</Path>
+            <Path fileType="header">/usr/include/eclib/flinterface.h</Path>
+            <Path fileType="header">/usr/include/eclib/getcurve.h</Path>
+            <Path fileType="header">/usr/include/eclib/gf.h</Path>
+            <Path fileType="header">/usr/include/eclib/hilbert.h</Path>
+            <Path fileType="header">/usr/include/eclib/homspace.h</Path>
+            <Path fileType="header">/usr/include/eclib/htconst.h</Path>
+            <Path fileType="header">/usr/include/eclib/illl.h</Path>
+            <Path fileType="header">/usr/include/eclib/interface.h</Path>
+            <Path fileType="header">/usr/include/eclib/isogs.h</Path>
+            <Path fileType="header">/usr/include/eclib/kbessel.h</Path>
+            <Path fileType="header">/usr/include/eclib/lambda.h</Path>
+            <Path fileType="header">/usr/include/eclib/legendre.h</Path>
+            <Path fileType="header">/usr/include/eclib/logger.h</Path>
+            <Path fileType="header">/usr/include/eclib/marith.h</Path>
+            <Path fileType="header">/usr/include/eclib/mat.h</Path>
+            <Path fileType="header">/usr/include/eclib/matrix.h</Path>
+            <Path fileType="header">/usr/include/eclib/mequiv.h</Path>
+            <Path fileType="header">/usr/include/eclib/method.h</Path>
+            <Path fileType="header">/usr/include/eclib/mglobsol.h</Path>
+            <Path fileType="header">/usr/include/eclib/minim.h</Path>
+            <Path fileType="header">/usr/include/eclib/mlocsol.h</Path>
+            <Path fileType="header">/usr/include/eclib/mmatrix.h</Path>
+            <Path fileType="header">/usr/include/eclib/moddata.h</Path>
+            <Path fileType="header">/usr/include/eclib/mquartic.h</Path>
+            <Path fileType="header">/usr/include/eclib/mrank1.h</Path>
+            <Path fileType="header">/usr/include/eclib/mrank2.h</Path>
+            <Path fileType="header">/usr/include/eclib/msoluble.h</Path>
+            <Path fileType="header">/usr/include/eclib/msubspace.h</Path>
+            <Path fileType="header">/usr/include/eclib/mvector.h</Path>
+            <Path fileType="header">/usr/include/eclib/mwprocs.h</Path>
+            <Path fileType="header">/usr/include/eclib/newforms.h</Path>
+            <Path fileType="header">/usr/include/eclib/nfd.h</Path>
+            <Path fileType="header">/usr/include/eclib/oldforms.h</Path>
+            <Path fileType="header">/usr/include/eclib/options.h</Path>
+            <Path fileType="header">/usr/include/eclib/p2points.h</Path>
+            <Path fileType="header">/usr/include/eclib/parifact.h</Path>
+            <Path fileType="header">/usr/include/eclib/pcprocs.h</Path>
+            <Path fileType="header">/usr/include/eclib/periods.h</Path>
+            <Path fileType="header">/usr/include/eclib/points.h</Path>
+            <Path fileType="header">/usr/include/eclib/pointsmod.h</Path>
+            <Path fileType="header">/usr/include/eclib/polys.h</Path>
+            <Path fileType="header">/usr/include/eclib/qc.h</Path>
+            <Path fileType="header">/usr/include/eclib/quadratic.h</Path>
+            <Path fileType="header">/usr/include/eclib/rat.h</Path>
+            <Path fileType="header">/usr/include/eclib/reader.h</Path>
+            <Path fileType="header">/usr/include/eclib/realroots.h</Path>
+            <Path fileType="header">/usr/include/eclib/reduce.h</Path>
+            <Path fileType="header">/usr/include/eclib/saturate.h</Path>
+            <Path fileType="header">/usr/include/eclib/sieve_search.h</Path>
+            <Path fileType="header">/usr/include/eclib/sifter.h</Path>
+            <Path fileType="header">/usr/include/eclib/smat.h</Path>
+            <Path fileType="header">/usr/include/eclib/smat_elim.h</Path>
+            <Path fileType="header">/usr/include/eclib/smatrix.h</Path>
+            <Path fileType="header">/usr/include/eclib/smatrix_elim.h</Path>
+            <Path fileType="header">/usr/include/eclib/splitbase.h</Path>
+            <Path fileType="header">/usr/include/eclib/sqfdiv.h</Path>
+            <Path fileType="header">/usr/include/eclib/sub.h</Path>
+            <Path fileType="header">/usr/include/eclib/subspace.h</Path>
+            <Path fileType="header">/usr/include/eclib/svec.h</Path>
+            <Path fileType="header">/usr/include/eclib/svector.h</Path>
+            <Path fileType="header">/usr/include/eclib/symb.h</Path>
+            <Path fileType="header">/usr/include/eclib/templates.h</Path>
+            <Path fileType="header">/usr/include/eclib/threadpool.h</Path>
+            <Path fileType="header">/usr/include/eclib/timer.h</Path>
+            <Path fileType="header">/usr/include/eclib/tlss.h</Path>
+            <Path fileType="header">/usr/include/eclib/transform.h</Path>
+            <Path fileType="header">/usr/include/eclib/twoadic.h</Path>
+            <Path fileType="header">/usr/include/eclib/types.h</Path>
+            <Path fileType="header">/usr/include/eclib/unimod.h</Path>
+            <Path fileType="header">/usr/include/eclib/vec.h</Path>
+            <Path fileType="header">/usr/include/eclib/vector.h</Path>
+            <Path fileType="header">/usr/include/eclib/version.h</Path>
+            <Path fileType="header">/usr/include/eclib/xmod.h</Path>
+            <Path fileType="header">/usr/include/eclib/xsplit.h</Path>
+            <Path fileType="header">/usr/include/eclib/xsplit_data.h</Path>
+            <Path fileType="library">/usr/lib64/libec.a</Path>
+            <Path fileType="library">/usr/lib64/libec.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/eclib.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-01-22</Date>
+            <Version>20231212</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

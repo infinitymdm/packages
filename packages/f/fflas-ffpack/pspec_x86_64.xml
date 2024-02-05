@@ -1,0 +1,258 @@
+<PISI>
+    <Source>
+        <Name>fflas-ffpack</Name>
+        <Homepage>https://linbox-team.github.io/fflas-ffpack/</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Packager>
+        <License>LGPL-2.1-or-later</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">A library for dense linear algebra over word-size finite fields</Summary>
+        <Description xml:lang="en">FFLAS-FFPACK is a LGPL-2.1+ source code library for basic linear algebra operations over a finite field.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>fflas-ffpack</Name>
+        <Summary xml:lang="en">A library for dense linear algebra over word-size finite fields</Summary>
+        <Description xml:lang="en">FFLAS-FFPACK is a LGPL-2.1+ source code library for basic linear algebra operations over a finite field.
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/fflas-ffpack-config</Path>
+            <Path fileType="library">/usr/lib64/libfflas.so.1</Path>
+            <Path fileType="library">/usr/lib64/libfflas.so.1.0.0</Path>
+            <Path fileType="library">/usr/lib64/libfflas_c.so.1</Path>
+            <Path fileType="library">/usr/lib64/libfflas_c.so.1.0.0</Path>
+            <Path fileType="library">/usr/lib64/libffpack.so.1</Path>
+            <Path fileType="library">/usr/lib64/libffpack.so.1.0.0</Path>
+            <Path fileType="library">/usr/lib64/libffpack_c.so.1</Path>
+            <Path fileType="library">/usr/lib64/libffpack_c.so.1.0.0</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>fflas-ffpack-devel</Name>
+        <Summary xml:lang="en">Development files for fflas-ffpack</Summary>
+        <Description xml:lang="en">FFLAS-FFPACK is a LGPL-2.1+ source code library for basic linear algebra operations over a finite field.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">fflas-ffpack</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checker_charpoly.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checker_det.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checker_empty.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checker_fgemm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checker_ftrsm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checker_invert.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checker_pluq.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checkers_fflas.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checkers_fflas.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checkers_ffpack.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/checkers/checkers_ffpack.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/config-blas.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/config.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas-ffpack-config.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas-ffpack-default-thresholds.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas-ffpack-thresholds.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas-ffpack.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_bounds.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_enum.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fadd.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fadd.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fassign.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fassign.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_faxpy.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fdot.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm/fgemm_classical.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm/fgemm_classical_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm/fgemm_winograd.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm/schedule_bini.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm/schedule_winograd.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm/schedule_winograd_acc.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm/schedule_winograd_acc_ip.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemm/schedule_winograd_ip.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fgemv_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fger.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fger_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_freduce.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_freduce.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_freduce_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_freivalds.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fscal.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fscal.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fscal_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fsyr2k.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fsyrk.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_fsyrk_strassen.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_ftrmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_ftrmm_src.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_ftrsm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_ftrsm_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_ftrsm_src.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_ftrsv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_helpers.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_igemm/igemm.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_igemm/igemm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_igemm/igemm_kernels.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_igemm/igemm_kernels.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_igemm/igemm_tools.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_igemm/igemm_tools.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_level1.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_level2.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_level3.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_pfgemm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_pftrsm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd128.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd128_double.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd128_float.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd128_int16.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd128_int32.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd128_int64.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd256.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd256_double.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd256_float.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd256_int16.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd256_int32.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd256_int64.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd512.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd512_double.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd512_float.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd512_int32.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd512_int64.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_simd/simd_modular.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/coo.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/coo/coo_spmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/coo/coo_spmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/coo/coo_utils.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr/csr_pspmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr/csr_pspmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr/csr_spmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr/csr_spmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr/csr_utils.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr_hyb.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr_hyb/csr_hyb_pspmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr_hyb/csr_hyb_pspmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr_hyb/csr_hyb_spmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr_hyb/csr_hyb_spmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/csr_hyb/csr_hyb_utils.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell/ell_pspmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell/ell_pspmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell/ell_spmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell/ell_spmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell/ell_utils.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell_simd.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell_simd/ell_simd_pspmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell_simd/ell_simd_spmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/ell_simd/ell_simd_utils.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/hyb_zo.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/hyb_zo/hyb_zo_pspmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/hyb_zo/hyb_zo_pspmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/hyb_zo/hyb_zo_spmm.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/hyb_zo/hyb_zo_spmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/hyb_zo/hyb_zo_utils.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/read_sparse.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/sell.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/sell/sell_pspmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/sell/sell_spmv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/sell/sell_utils.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/sparse_matrix_traits.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_sparse/utils.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/fflas/fflas_transpose.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_bruhatgen.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_charpoly.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_charpoly_danilevski.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_charpoly_kgfast.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_charpoly_kgfastgeneralized.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_charpoly_kglu.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_charpoly_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_det_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_echelonforms.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_fgesv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_fgetrs.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_frobenius.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_fsytrf.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_ftrssyr2k.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_ftrstr.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_ftrtr.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_invert.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_krylovelim.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_ludivine.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_ludivine_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_minpoly.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_permutation.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_pluq.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_pluq_mp.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_ppluq.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/ffpack/ffpack_rankprofiles.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/field-traits.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/rns-double-elt.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/rns-double-recint.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/rns-double.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/rns-double.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/rns-integer-mod.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/rns-integer.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/rns.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/field/rns.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/fflas_L1_inst.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/fflas_L1_inst_implem.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/fflas_L2_inst.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/fflas_L2_inst_implem.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/fflas_L3_inst.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/fflas_L3_inst_implem.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/fflas_c.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/ffpack_c.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/ffpack_inst.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/interfaces/libs/ffpack_inst_implem.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/paladin/blockcuts.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/paladin/fflas_plevel1.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/paladin/kaapi_routines.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/paladin/parallel.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/paladin/pfgemm_variants.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/paladin/pfgemv.inl</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/Matio.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/align-allocator.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/args-parser.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/bit_manipulation.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/cast.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/debug.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/fflas_intrinsic.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/fflas_io.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/fflas_memory.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/fflas_randommatrix.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/flimits.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/test-utils.h</Path>
+            <Path fileType="header">/usr/include/fflas-ffpack/utils/timer.h</Path>
+            <Path fileType="library">/usr/lib64/libfflas.a</Path>
+            <Path fileType="library">/usr/lib64/libfflas.so</Path>
+            <Path fileType="library">/usr/lib64/libfflas_c.a</Path>
+            <Path fileType="library">/usr/lib64/libfflas_c.so</Path>
+            <Path fileType="library">/usr/lib64/libffpack.a</Path>
+            <Path fileType="library">/usr/lib64/libffpack.so</Path>
+            <Path fileType="library">/usr/lib64/libffpack_c.a</Path>
+            <Path fileType="library">/usr/lib64/libffpack_c.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/fflas-ffpack.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-01-23</Date>
+            <Version>2.5.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

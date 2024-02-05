@@ -1,0 +1,27 @@
+name       : eclib
+version    : '20231212'
+release    : 1
+source     :
+    - https://github.com/JohnCremona/eclib/archive/refs/tags/v20231212.tar.gz : b34b95d2eb759c4a7757d0c155646744393074bc56fee755cfd36ea7f6130152
+homepage   : https://common-lisp.net/project/ecl/
+license    : GPL-2.0-or-later
+component  : office.scientific
+summary    : Tools for elliptic curves
+description: |
+    The eclib package includes mwrank (for 2-descent on elliptic curves over Q) and modular symbol code used to create the elliptic curve database.
+builddeps  :
+    - libboost-devel
+    - ntl-devel
+    - pari-devel
+rundeps    :
+    - ntl
+    - pari
+setup      : |
+    %reconfigure \
+        --with-pari=/usr \
+        --with-boost
+    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+build      : |
+    %make
+install    : |
+    %make_install

@@ -1,0 +1,276 @@
+<PISI>
+    <Source>
+        <Name>givaro</Name>
+        <Homepage>http://givaro.forge.imag.fr/</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Packager>
+        <License>CECILL-B</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">C++ library for arithmetic and algebraic computations</Summary>
+        <Description xml:lang="en">C++ library for arithmetic and algebraic computations
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>givaro</Name>
+        <Summary xml:lang="en">C++ library for arithmetic and algebraic computations</Summary>
+        <Description xml:lang="en">C++ library for arithmetic and algebraic computations
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/givaro-config</Path>
+            <Path fileType="library">/usr/lib64/libgivaro.so.9</Path>
+            <Path fileType="library">/usr/lib64/libgivaro.so.9.2.0</Path>
+            <Path fileType="data">/usr/share/givaro/givaro-makefile</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>givaro-devel</Name>
+        <Summary xml:lang="en">Development files for givaro</Summary>
+        <Description xml:lang="en">C++ library for arithmetic and algebraic computations
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">givaro</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/givaro-config.h</Path>
+            <Path fileType="header">/usr/include/givaro/StaticElement.h</Path>
+            <Path fileType="header">/usr/include/givaro/chineseremainder.h</Path>
+            <Path fileType="header">/usr/include/givaro/extension.h</Path>
+            <Path fileType="header">/usr/include/givaro/gf2.h</Path>
+            <Path fileType="header">/usr/include/givaro/gf2.inl</Path>
+            <Path fileType="header">/usr/include/givaro/gfq.h</Path>
+            <Path fileType="header">/usr/include/givaro/gfq.inl</Path>
+            <Path fileType="header">/usr/include/givaro/gfqext.h</Path>
+            <Path fileType="header">/usr/include/givaro/gfqkronecker.h</Path>
+            <Path fileType="header">/usr/include/givaro/givarithmetics.h</Path>
+            <Path fileType="header">/usr/include/givaro/givaromm.h</Path>
+            <Path fileType="header">/usr/include/givaro/givarray0.h</Path>
+            <Path fileType="header">/usr/include/givaro/givarray0.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givarrayallocator.h</Path>
+            <Path fileType="header">/usr/include/givaro/givarrayfixed.h</Path>
+            <Path fileType="header">/usr/include/givaro/givbasictype.h</Path>
+            <Path fileType="header">/usr/include/givaro/givbits.h</Path>
+            <Path fileType="header">/usr/include/givaro/givbits.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givcaster.h</Path>
+            <Path fileType="header">/usr/include/givaro/givcategory.h</Path>
+            <Path fileType="header">/usr/include/givaro/givconfig.h</Path>
+            <Path fileType="header">/usr/include/givaro/givdegree.h</Path>
+            <Path fileType="header">/usr/include/givaro/givelem.h</Path>
+            <Path fileType="header">/usr/include/givaro/giverror.h</Path>
+            <Path fileType="header">/usr/include/givaro/givfixedtrunc.h</Path>
+            <Path fileType="header">/usr/include/givaro/givfractiondomain.h</Path>
+            <Path fileType="header">/usr/include/givaro/givgenarith.h</Path>
+            <Path fileType="header">/usr/include/givaro/givhashtable.h</Path>
+            <Path fileType="header">/usr/include/givaro/givhashtable.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givhighorder.h</Path>
+            <Path fileType="header">/usr/include/givaro/givindeter.h</Path>
+            <Path fileType="header">/usr/include/givaro/givinit.h</Path>
+            <Path fileType="header">/usr/include/givaro/givinteger.h</Path>
+            <Path fileType="header">/usr/include/givaro/givinterp.h</Path>
+            <Path fileType="header">/usr/include/givaro/givinterpgeom-multip.h</Path>
+            <Path fileType="header">/usr/include/givaro/givinterpgeom.h</Path>
+            <Path fileType="header">/usr/include/givaro/givintfactor.h</Path>
+            <Path fileType="header">/usr/include/givaro/givintfactor.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givintnumtheo.h</Path>
+            <Path fileType="header">/usr/include/givaro/givintnumtheo.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givintprime.h</Path>
+            <Path fileType="header">/usr/include/givaro/givintprime.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givintrns.h</Path>
+            <Path fileType="header">/usr/include/givaro/givintrns_convert.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givintrns_cstor.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givintrsa.h</Path>
+            <Path fileType="header">/usr/include/givaro/givintrsa.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givintsqrootmod.h</Path>
+            <Path fileType="header">/usr/include/givaro/givintsqrootmod.inl</Path>
+            <Path fileType="header">/usr/include/givaro/giviterator.h</Path>
+            <Path fileType="header">/usr/include/givaro/givlist0.h</Path>
+            <Path fileType="header">/usr/include/givaro/givlist0.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givmatdense.h</Path>
+            <Path fileType="header">/usr/include/givaro/givmatdenseops.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givmatrix.h</Path>
+            <Path fileType="header">/usr/include/givaro/givmatsparse.h</Path>
+            <Path fileType="header">/usr/include/givaro/givmatsparseops.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givmatstorage.h</Path>
+            <Path fileType="header">/usr/include/givaro/givmatstoragedense.h</Path>
+            <Path fileType="header">/usr/include/givaro/givmatstoragesparse.h</Path>
+            <Path fileType="header">/usr/include/givaro/givmemorer.h</Path>
+            <Path fileType="header">/usr/include/givaro/givmodule.h</Path>
+            <Path fileType="header">/usr/include/givaro/givomptimer.h</Path>
+            <Path fileType="header">/usr/include/givaro/givops.h</Path>
+            <Path fileType="header">/usr/include/givaro/givperf.h</Path>
+            <Path fileType="header">/usr/include/givaro/givpointer.h</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1.h</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1addsub.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1axpy.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1crt.h</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1crtconvert.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1crtcstor.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1cstor.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1cyclo.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1dense.h</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1denseops.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1factor.h</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1factor.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1gcd.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1io.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1kara.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1misc.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1muldiv.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1padic.h</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1proot.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1ratrecon.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpoly1sqrfree.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givpower.h</Path>
+            <Path fileType="header">/usr/include/givaro/givprimes16.h</Path>
+            <Path fileType="header">/usr/include/givaro/givprint.h</Path>
+            <Path fileType="header">/usr/include/givaro/givquotientdomain.h</Path>
+            <Path fileType="header">/usr/include/givaro/givranditer.h</Path>
+            <Path fileType="header">/usr/include/givaro/givrandom.h</Path>
+            <Path fileType="header">/usr/include/givaro/givrational.h</Path>
+            <Path fileType="header">/usr/include/givaro/givrational.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givref_count.h</Path>
+            <Path fileType="header">/usr/include/givaro/givrns.h</Path>
+            <Path fileType="header">/usr/include/givaro/givrnsconvert.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givrnscstor.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givrnsfixed.h</Path>
+            <Path fileType="header">/usr/include/givaro/givrnsfixed.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givspyinteger.h</Path>
+            <Path fileType="header">/usr/include/givaro/givstack.h</Path>
+            <Path fileType="header">/usr/include/givaro/givstack.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givstorage.h</Path>
+            <Path fileType="header">/usr/include/givaro/givstoragedense.h</Path>
+            <Path fileType="header">/usr/include/givaro/givstoragesparse.h</Path>
+            <Path fileType="header">/usr/include/givaro/givtablelimits.h</Path>
+            <Path fileType="header">/usr/include/givaro/givtimer.h</Path>
+            <Path fileType="header">/usr/include/givaro/givtruncdomain.h</Path>
+            <Path fileType="header">/usr/include/givaro/givtruncdomain.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givtypestring.h</Path>
+            <Path fileType="header">/usr/include/givaro/givvectdenseops.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givvectdensespe.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givvector.h</Path>
+            <Path fileType="header">/usr/include/givaro/givvectordense.h</Path>
+            <Path fileType="header">/usr/include/givaro/givvectordense.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givvectorsparse.h</Path>
+            <Path fileType="header">/usr/include/givaro/givvectorsparse.inl</Path>
+            <Path fileType="header">/usr/include/givaro/givvectsparseops.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced-double.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced-double.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced-float.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced-float.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced-int32.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced-int32.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced-int64.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced-int64.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-balanced.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-extended.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-extended.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-floating.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-floating.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-general.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-general.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-implem.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-integer.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-integer.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-integral.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-integral.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-inttype.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-inttype.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-log16.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-log16.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-mulprecomp.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular-ruint.h</Path>
+            <Path fileType="header">/usr/include/givaro/modular-ruint.inl</Path>
+            <Path fileType="header">/usr/include/givaro/modular.h</Path>
+            <Path fileType="header">/usr/include/givaro/montgomery-int32.h</Path>
+            <Path fileType="header">/usr/include/givaro/montgomery-int32.inl</Path>
+            <Path fileType="header">/usr/include/givaro/montgomery-ruint.h</Path>
+            <Path fileType="header">/usr/include/givaro/montgomery-ruint.inl</Path>
+            <Path fileType="header">/usr/include/givaro/montgomery.h</Path>
+            <Path fileType="header">/usr/include/givaro/qfield.h</Path>
+            <Path fileType="header">/usr/include/givaro/random-integer.h</Path>
+            <Path fileType="header">/usr/include/givaro/ring-interface.h</Path>
+            <Path fileType="header">/usr/include/givaro/udl.h</Path>
+            <Path fileType="header">/usr/include/givaro/unparametric-operations.h</Path>
+            <Path fileType="header">/usr/include/givaro/zring.h</Path>
+            <Path fileType="header">/usr/include/gmp++/gmp++.h</Path>
+            <Path fileType="header">/usr/include/gmp++/gmp++_int.h</Path>
+            <Path fileType="header">/usr/include/gmp++/gmp++_int_rand.inl</Path>
+            <Path fileType="header">/usr/include/recint/radd.h</Path>
+            <Path fileType="header">/usr/include/recint/rcmp.h</Path>
+            <Path fileType="header">/usr/include/recint/rconvert.h</Path>
+            <Path fileType="header">/usr/include/recint/rdisplay.h</Path>
+            <Path fileType="header">/usr/include/recint/rdiv.h</Path>
+            <Path fileType="header">/usr/include/recint/recdefine.h</Path>
+            <Path fileType="header">/usr/include/recint/recint.h</Path>
+            <Path fileType="header">/usr/include/recint/reclonglong.h</Path>
+            <Path fileType="header">/usr/include/recint/rfiddling.h</Path>
+            <Path fileType="header">/usr/include/recint/rint.h</Path>
+            <Path fileType="header">/usr/include/recint/rmadd.h</Path>
+            <Path fileType="header">/usr/include/recint/rmbaddmul.h</Path>
+            <Path fileType="header">/usr/include/recint/rmbexp.h</Path>
+            <Path fileType="header">/usr/include/recint/rmbinv.h</Path>
+            <Path fileType="header">/usr/include/recint/rmbmodule.h</Path>
+            <Path fileType="header">/usr/include/recint/rmbmul.h</Path>
+            <Path fileType="header">/usr/include/recint/rmbreduc.h</Path>
+            <Path fileType="header">/usr/include/recint/rmbrmint.h</Path>
+            <Path fileType="header">/usr/include/recint/rmcmp.h</Path>
+            <Path fileType="header">/usr/include/recint/rmconvert.h</Path>
+            <Path fileType="header">/usr/include/recint/rmdefine.h</Path>
+            <Path fileType="header">/usr/include/recint/rmdisplay.h</Path>
+            <Path fileType="header">/usr/include/recint/rmdiv.h</Path>
+            <Path fileType="header">/usr/include/recint/rmextra.h</Path>
+            <Path fileType="header">/usr/include/recint/rmgaddmul.h</Path>
+            <Path fileType="header">/usr/include/recint/rmgexp.h</Path>
+            <Path fileType="header">/usr/include/recint/rmginv.h</Path>
+            <Path fileType="header">/usr/include/recint/rmgmodule.h</Path>
+            <Path fileType="header">/usr/include/recint/rmgmul.h</Path>
+            <Path fileType="header">/usr/include/recint/rmgreduc.h</Path>
+            <Path fileType="header">/usr/include/recint/rmgrmint.h</Path>
+            <Path fileType="header">/usr/include/recint/rmint.h</Path>
+            <Path fileType="header">/usr/include/recint/rmintmg.h</Path>
+            <Path fileType="header">/usr/include/recint/rmmanip.h</Path>
+            <Path fileType="header">/usr/include/recint/rmmul.h</Path>
+            <Path fileType="header">/usr/include/recint/rmneg.h</Path>
+            <Path fileType="header">/usr/include/recint/rmrandom.h</Path>
+            <Path fileType="header">/usr/include/recint/rmsub.h</Path>
+            <Path fileType="header">/usr/include/recint/rmul.h</Path>
+            <Path fileType="header">/usr/include/recint/rrandom.h</Path>
+            <Path fileType="header">/usr/include/recint/rrint.h</Path>
+            <Path fileType="header">/usr/include/recint/rsub.h</Path>
+            <Path fileType="header">/usr/include/recint/ruadd.h</Path>
+            <Path fileType="header">/usr/include/recint/ruaddmul.h</Path>
+            <Path fileType="header">/usr/include/recint/rucmp.h</Path>
+            <Path fileType="header">/usr/include/recint/ruconvert.h</Path>
+            <Path fileType="header">/usr/include/recint/rudisplay.h</Path>
+            <Path fileType="header">/usr/include/recint/rudiv.h</Path>
+            <Path fileType="header">/usr/include/recint/ruexp.h</Path>
+            <Path fileType="header">/usr/include/recint/rufiddling.h</Path>
+            <Path fileType="header">/usr/include/recint/rugcd.h</Path>
+            <Path fileType="header">/usr/include/recint/ruint.h</Path>
+            <Path fileType="header">/usr/include/recint/ruinvmod.h</Path>
+            <Path fileType="header">/usr/include/recint/rumanip.h</Path>
+            <Path fileType="header">/usr/include/recint/rumul.h</Path>
+            <Path fileType="header">/usr/include/recint/rurandom.h</Path>
+            <Path fileType="header">/usr/include/recint/ruruint.h</Path>
+            <Path fileType="header">/usr/include/recint/rushift.h</Path>
+            <Path fileType="header">/usr/include/recint/rusub.h</Path>
+            <Path fileType="header">/usr/include/recint/rutools.h</Path>
+            <Path fileType="library">/usr/lib64/libgivaro.a</Path>
+            <Path fileType="library">/usr/lib64/libgivaro.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/givaro.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-01-22</Date>
+            <Version>4.2.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

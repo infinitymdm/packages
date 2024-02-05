@@ -1,0 +1,27 @@
+name       : ecl
+version    : 23.9.9
+release    : 1
+source     :
+    - https://ecl.common-lisp.dev/static/files/release/ecl-23.9.9.tgz : c51bdab4ca6c1173dd3fe9cfe9727bcefb97bb0a3d6434b627ca6bdaeb33f880
+homepage   : https://common-lisp.net/project/ecl/
+license    : LGPL-2.1-or-later
+component  : system.devel
+summary    : Embeddable Common-Lisp
+description: |
+    ECL (Embeddable Common-Lisp) is an interpreter of the Common-Lisp language as described in the X3J13 Ansi specification, featuring CLOS (Common-Lisp Object System), conditions, loops, etc, plus a translator to C, which can produce standalone executables.
+setup      : |
+    sed -i 's|-Wl,--rpath,~A|-Wl,--rpath,/usr/lib/ecl|' src/configure
+    %configure \
+        --with-tcp \
+        --with-serve-event \
+        --with-clos-streams \
+        --with-system-gmp \
+        --without-x \
+        --without-clx \
+        --enable-threads \
+        --enable-shared \
+        --enable-boehm=included \
+build      : |
+    %make
+install    : |
+    %make_install

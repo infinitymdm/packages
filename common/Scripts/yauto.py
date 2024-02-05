@@ -349,10 +349,11 @@ install    : |
             yml.flush()
 
     def check_is_gnomey (self, path):
-        with open (path, "r") as makefile:
-            lines = makefile.read ()
-            if "g-ir-scanner" in lines or "g_ir_scanner" in lines:
-                return True
+        if os.path.exists (os.path.realpath (path)) :
+            with open (path, "r") as makefile:
+                lines = makefile.read ()
+                if "g-ir-scanner" in lines or "g_ir_scanner" in lines:
+                    return True
         return False
 
 if __name__ == "__main__":

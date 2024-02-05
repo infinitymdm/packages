@@ -1,0 +1,20 @@
+name       : linbox
+version    : 1.7.0
+release    : 1
+source     :
+    - https://github.com/linbox-team/linbox/archive/refs/tags/v1.7.0.tar.gz : 810d306ed2a512e1f2129817eb4a10a696442bb827fe6635ce49d5b8d50c108f
+homepage   : https://linalg.org/
+license    : LGPL-2.1-or-later
+component  : office.scientific
+summary    : A template library for exact, high-performance linear algebra computation
+description: |
+    A template library for exact, high-performance linear algebra computation with dense, sparse, and structured matrices over the integers and over finite fields
+builddeps  :
+    - pkgconfig(fflas-ffpack)
+setup      : |
+    %reconfigure --enable-sage
+    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool # fix overlinking
+build      : |
+    %make
+install    : |
+    %make_install

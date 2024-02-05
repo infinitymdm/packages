@@ -1,0 +1,375 @@
+<PISI>
+    <Source>
+        <Name>ecl</Name>
+        <Homepage>https://common-lisp.net/project/ecl/</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Packager>
+        <License>LGPL-2.1-or-later</License>
+        <PartOf>system.devel</PartOf>
+        <Summary xml:lang="en">Embeddable Common-Lisp</Summary>
+        <Description xml:lang="en">ECL (Embeddable Common-Lisp) is an interpreter of the Common-Lisp language as described in the X3J13 Ansi specification, featuring CLOS (Common-Lisp Object System), conditions, loops, etc, plus a translator to C, which can produce standalone executables.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>ecl</Name>
+        <Summary xml:lang="en">Embeddable Common-Lisp</Summary>
+        <Description xml:lang="en">ECL (Embeddable Common-Lisp) is an interpreter of the Common-Lisp language as described in the X3J13 Ansi specification, featuring CLOS (Common-Lisp Object System), conditions, loops, etc, plus a translator to C, which can produce standalone executables.
+</Description>
+        <PartOf>system.devel</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/ecl</Path>
+            <Path fileType="executable">/usr/bin/ecl-config</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/COPYING</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/LICENSE</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/TAGS</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/asdf.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/build-stamp</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/cmp.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/cmp.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/deflate.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/deflate.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/dpp</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl-cdb.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl-cdb.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl-curl.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl-curl.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl-help.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl-help.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl-quicklisp.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl-quicklisp.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ecl_min</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/arabic</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ascii</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/asmo-708</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/atarist.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp-856.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp819</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp850</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp862</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp866</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp932</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp936</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp949</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cp950</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/cyrillic</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp437.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp737.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp775.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp850.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp852.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp855.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp857.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp860.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp861.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp862.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp863.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp864.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp865.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp866.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp869.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/dos-cp874.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ecma-114</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ecma-118</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/greek</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/greek8</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/hebrew</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm437</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm819</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm850</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm852</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm855</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm857</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm860</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm861</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm862</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm863</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm864</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm865</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm866</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ibm869</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-2022-jp</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-2022-jp-1</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-1.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-10.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-11.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-13.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-14.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-15.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-16.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-2.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-3.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-4.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-5.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-6.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-7.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-8.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso-8859-9.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-1</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-10</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-13</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-14</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-15</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-2</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-3</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-4</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-5</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-6</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-7</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-8</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/iso8859-9</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/jisx0201.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/jisx0208.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/jisx0212.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/koi8-r.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/koi8-u.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/koi8r</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-1</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-2</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-3</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-4</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-5</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-6</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-7</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-8</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin-9</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin2</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin3</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin4</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin5</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin6</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin7</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin8</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/latin9</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ms-ansi</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ms-arab</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ms-cyrl</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ms-ee</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ms-greek</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ms-hebr</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ms-turk</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/shift-jis.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/tools.lisp</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ucs2</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ucs2be</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ucs2le</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ucs4</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ucs4be</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/ucs4le</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/unicode</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf-16</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf-16be</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf-16le</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf-32</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf-32be</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf-32le</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf16</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf32</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/utf8</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/winbaltrim</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1250</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1251</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1252</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1253</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1254</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1255</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1256</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1257</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-1258</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-932</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-936</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-949</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-950</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1250.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1251.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1252.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1253.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1254.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1255.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1256.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1257.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp1258.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp932.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp936.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp949.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/encodings/windows-cp950.bin</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/help.doc</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libasdf.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libcmp.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libdeflate.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libecl-cdb.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libecl-curl.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libecl-help.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libecl-quicklisp.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libpackage-locks.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libql-minitar.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libsb-bsd-sockets.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libserve-event.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/libsockets.a</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/package-locks.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/package-locks.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/prebuilt-asdf.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ql-minitar.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/ql-minitar.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/sb-bsd-sockets.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/sb-bsd-sockets.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/serve-event.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/serve-event.fas</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/sockets.asd</Path>
+            <Path fileType="library">/usr/lib64/ecl-23.9.9/sockets.fas</Path>
+            <Path fileType="library">/usr/lib64/libecl.so.23</Path>
+            <Path fileType="library">/usr/lib64/libecl.so.23.9</Path>
+            <Path fileType="library">/usr/lib64/libecl.so.23.9.9</Path>
+            <Path fileType="info">/usr/share/info/ecl.info.gz</Path>
+            <Path fileType="man">/usr/share/man/man1/ecl-config.1</Path>
+            <Path fileType="man">/usr/share/man/man1/ecl.1</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>ecl-devel</Name>
+        <Summary xml:lang="en">Development files for ecl</Summary>
+        <Description xml:lang="en">ECL (Embeddable Common-Lisp) is an interpreter of the Common-Lisp language as described in the X3J13 Ansi specification, featuring CLOS (Common-Lisp Object System), conditions, loops, etc, plus a translator to C, which can produce standalone executables.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">ecl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/ecl/atomic_ops.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/ao_version.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/generalize-arithm.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/generalize-small.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/generalize.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/all_acquire_release_volatile.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/all_aligned_atomic_load_store.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/all_atomic_load_store.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/all_atomic_only_load.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/ao_t_is_int.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/armcc/arm_v6.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/emul_cas.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/aarch64.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/alpha.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/arm.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/avr32.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/cris.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/e2k.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/generic-arithm.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/generic-small.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/generic.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/hexagon.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/hppa.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/ia64.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/m68k.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/mips.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/powerpc.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/riscv.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/s390.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/sh.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/sparc.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/tile.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/gcc/x86.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/generic_pthread.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/hpc/hppa.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/hpc/ia64.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/ibmc/powerpc.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/icc/ia64.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/acquire_release_volatile.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/atomic_load.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/atomic_store.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/char_acquire_release_volatile.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/char_atomic_load.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/char_atomic_store.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/double_atomic_load_store.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/int_acquire_release_volatile.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/int_atomic_load.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/int_atomic_store.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/ordered_loads_only.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/ordered_stores_only.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/short_acquire_release_volatile.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/short_atomic_load.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/loadstore/short_atomic_store.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/msftc/arm.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/msftc/arm64.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/msftc/common32_defs.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/msftc/x86.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/msftc/x86_64.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/ordered.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/ordered_except_wr.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/read_ordered.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/standard_ao_double_t.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/sunc/sparc.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/sunc/x86.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/test_and_set_t_is_ao_t.h</Path>
+            <Path fileType="header">/usr/include/ecl/atomic_ops/sysdeps/test_and_set_t_is_char.h</Path>
+            <Path fileType="header">/usr/include/ecl/bytecodes.h</Path>
+            <Path fileType="header">/usr/include/ecl/cache.h</Path>
+            <Path fileType="header">/usr/include/ecl/config-internal.h</Path>
+            <Path fileType="header">/usr/include/ecl/config.h</Path>
+            <Path fileType="header">/usr/include/ecl/configpre-int.h</Path>
+            <Path fileType="header">/usr/include/ecl/configpre.h</Path>
+            <Path fileType="header">/usr/include/ecl/cons.h</Path>
+            <Path fileType="header">/usr/include/ecl/cs.h</Path>
+            <Path fileType="header">/usr/include/ecl/ecl-cmp.h</Path>
+            <Path fileType="header">/usr/include/ecl/ecl-inl.h</Path>
+            <Path fileType="header">/usr/include/ecl/ecl.h</Path>
+            <Path fileType="header">/usr/include/ecl/ecl_atomics.h</Path>
+            <Path fileType="header">/usr/include/ecl/external.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/cord.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/cord_pos.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/ec.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_backptr.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_config_macros.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_disclaim.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_gcj.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_inline.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_mark.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_pthread_redirects.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_tiny_fl.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_typed.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/gc_version.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/javaxfc.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/leak_detector.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/darwin_semaphore.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/darwin_stop_world.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/dbg_mlc.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/gc_alloc_ptrs.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/gc_atomic_ops.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/gc_hdrs.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/gc_locks.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/gc_pmark.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/gc_priv.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/gcconfig.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/msvc_dbg.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/pthread_stop_world.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/pthread_support.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/specific.h</Path>
+            <Path fileType="header">/usr/include/ecl/gc/private/thread_local_alloc.h</Path>
+            <Path fileType="header">/usr/include/ecl/impl/math_dispatch.h</Path>
+            <Path fileType="header">/usr/include/ecl/impl/math_dispatch2.h</Path>
+            <Path fileType="header">/usr/include/ecl/impl/math_fenv.h</Path>
+            <Path fileType="header">/usr/include/ecl/impl/math_fenv_msvc.h</Path>
+            <Path fileType="header">/usr/include/ecl/internal.h</Path>
+            <Path fileType="header">/usr/include/ecl/legacy.h</Path>
+            <Path fileType="header">/usr/include/ecl/number.h</Path>
+            <Path fileType="header">/usr/include/ecl/object.h</Path>
+            <Path fileType="header">/usr/include/ecl/page.h</Path>
+            <Path fileType="header">/usr/include/ecl/stack-resize.h</Path>
+            <Path fileType="header">/usr/include/ecl/stacks.h</Path>
+            <Path fileType="header">/usr/include/ecl/threads.h</Path>
+            <Path fileType="library">/usr/lib64/libecl.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-01-21</Date>
+            <Version>23.9.9</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,30 @@
+name       : ntl
+version    : 11.5.1
+release    : 1
+source     :
+    - https://github.com/libntl/ntl/archive/refs/tags/v11.5.1.tar.gz : ef578fa8b6c0c64edd1183c4c303b534468b58dd3eb8df8c9a5633f984888de5
+homepage   : https://www.shoup.net/ntl/
+license    : LGPL-2.1-or-later
+component  : office.scientific
+summary    : A Library for doing Number Theory
+description: |
+    NTL is a high-performance, portable C++ library providing data structures and algorithms for manipulating signed, arbitrary length integers, and for vectors, matrices, and polynomials over the integers and over finite fields.
+builddeps  :
+    - pkgconfig(gf2x)
+setup      : |
+    cd src
+    # rm -r libtool-origin
+    ./configure \
+        DEF_PREFIX=/usr \
+        SHARED=on \
+        NTL_GF2X_LIB=on \
+        NATIVE=off \
+        TUNE=x86 \
+        CXXFLAGS="${CXXFLAGS}" \
+        LDFLAGS="${LDFLAGS}"
+build      : |
+    cd src
+    %make
+install    : |
+    cd src
+    %make_install
