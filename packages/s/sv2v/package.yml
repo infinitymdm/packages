@@ -1,0 +1,20 @@
+name       : sv2v
+version    : 0.0.12
+release    : 1
+source     :
+    - https://github.com/zachjs/sv2v/archive/refs/tags/v0.0.12.tar.gz : b64312c995f2d2792fbe610f4a0440259e7e2a9ad9032b37beabf621da51c6da
+homepage   : https://github.com/zachjs/sv2v
+license    : BSD-3-Clause
+component  : office.scientific
+summary    : SystemVerilog to Verilog conversion
+description: |
+    sv2v converts SystemVerilog (IEEE 1800-2017) to Verilog (IEEE 1364-2005), with an emphasis on supporting synthesizable language constructs.
+networking : yes
+builddeps  :
+    - haskell-cabal-install
+setup      : |
+    %cabal_configure
+build      : |
+    %haskell_build
+install    : |
+    %haskell_install
