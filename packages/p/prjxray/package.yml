@@ -1,0 +1,30 @@
+name       : prjxray
+version    : 20250215
+release    : 1
+source     :
+    - git|https://github.com/f4pga/prjxray : faf9c774a340e39cf6802d009996ed6016e63521
+    - git|https://github.com/f4pga/prjxray-db : 0a0addedd73e7e4139d52a6d8db4258763e0f1f3
+homepage   : https://f4pga.readthedocs.io/projects/prjxray/en/latest/
+license    : ISC
+component  : office.scientific
+summary    : A collection of tools and documentation for Xilinx 7-series FPGAs.
+description: |
+    Project X-Ray documents the Xilinx 7-Series FPGA architecture to enable development of open-source tools. The goal is to provide sufficient information to develop a free and open Verilog to bitstream toolchain for these devices.
+builddeps  :
+    - pkgconfig(absl_base)
+    - pkgconfig(python3)
+    - pkgconfig(yaml-cpp)
+patterns   :
+    - main : /*
+    - db : /usr/share/xray/database
+setup      : |
+    %cmake_ninja -DCMAKE_BUILD_TYPE='None'
+build      : |
+    %ninja_build
+    %python3_setup
+install    : |
+    %ninja_install
+    %python3_install
+
+    install -dm00755 $installdir/usr/share/xray/database
+    cp -r $sources/prjxray-db.git/{artix7,kintex7,spartan7,zynq7} $installdir/usr/share/xray/database/

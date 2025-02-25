@@ -1,0 +1,46 @@
+name       : nextpnr-xilinx
+version    : 20241011
+release    : 1
+source     :
+    - git|https://github.com/gatecat/nextpnr-xilinx.git : 8f178fc6a6d4dfbc57bef66c3ccff34d558047d5
+    - git|https://github.com/gatecat/nextpnr-xilinx-meta.git : 57de9216639b0670949664cfdc61b2679064eb7b
+homepage   : https://github.com/gatecat/nextpnr-xilinx
+license    : ISC
+component  : office.scientific
+summary    : Experimental flows using nextpnr for Xilinx devices
+description: |
+    nextpnr is a open-source multi-architecture place-and-route framework aimed at real-world FPGA silicon. This is an experiment to integrate nextpnr with Project Xray, open bitstream documentation for xc7 FPGAs.
+builddeps  :
+    - pkgconfig(eigen3)
+    - pkgconfig(python3)
+    - libboost-devel
+    - prjxray
+    - yosys
+rundeps    :
+    - prjxray
+environment: |
+    export XRAY_DB=%PREFIX%/share/xray/database
+setup      : |
+    %cmake_ninja \
+        -DARCH=xilinx \
+        -DCMAKE_BUILD_TYPE=None
+build      : |
+    %ninja_build
+
+    # Build device dbs in parallel (but not too parallel)
+    mkdir -p $workdir/blobs
+    mkdir -p $workdir/xilinx-chipdb
+    for series in `ls $XRAY_DB`; do
+        (
+            for device in `find $XRAY_DB/$series -type d -name 'xc7*-*' -printf '%P\n'`; do
+                python3 $workdir/xilinx/python/bbaexport.py --xray $XRAY_DB/$series --meta $sources/nextpnr-xilinx-meta.git/$series --device $device --bba $workdir/blobs/$device.bba
+                $workdir/solusBuildDir/bba/bbasm --le $workdir/blobs/$device.bba $workdir/xilinx-chipdb/$device.bin
+            done
+        ) &
+    done
+    wait
+install    : |
+    %ninja_install
+
+    install -dm00644 $installdir/usr/share/nextpnr
+    cp -r $workdir/xilinx-chipdb $installdir/usr/share/nextpnr/.

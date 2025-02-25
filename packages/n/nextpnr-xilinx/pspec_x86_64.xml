@@ -1,0 +1,161 @@
+<PISI>
+    <Source>
+        <Name>nextpnr-xilinx</Name>
+        <Homepage>https://github.com/gatecat/nextpnr-xilinx</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>marcus@infinitymdm.dev</Email>
+        </Packager>
+        <License>ISC</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">Experimental flows using nextpnr for Xilinx devices</Summary>
+        <Description xml:lang="en">nextpnr is a open-source multi-architecture place-and-route framework aimed at real-world FPGA silicon. This is an experiment to integrate nextpnr with Project Xray, open bitstream documentation for xc7 FPGAs.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>nextpnr-xilinx</Name>
+        <Summary xml:lang="en">Experimental flows using nextpnr for Xilinx devices</Summary>
+        <Description xml:lang="en">nextpnr is a open-source multi-architecture place-and-route framework aimed at real-world FPGA silicon. This is an experiment to integrate nextpnr with Project Xray, open bitstream documentation for xc7 FPGAs.
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/bbasm</Path>
+            <Path fileType="executable">/usr/bin/nextpnr-xilinx</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tcsg324-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tcsg324-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tcsg324-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tcsg324-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tfgg484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tfgg484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tfgg484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tfgg484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tfgg676-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tfgg676-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tfgg676-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tfgg676-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tftg256-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tftg256-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tftg256-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a100tftg256-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbg484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbg484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbg484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbg484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbg676-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbg676-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbg676-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbg676-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbv484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbv484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbv484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbv484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbv676-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbv676-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbv676-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tfbv676-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tffg1156-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tffg1156-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tffg1156-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tffg1156-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tffv1156-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tffv1156-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tffv1156-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tffv1156-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tsbg484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tsbg484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tsbg484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tsbg484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tsbv484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tsbv484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tsbv484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a200tsbv484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcpg236-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcpg236-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcpg236-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcpg236-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcsg324-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcsg324-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcsg324-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcsg324-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcsg325-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcsg325-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcsg325-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tcsg325-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tfgg484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tfgg484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tfgg484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tfgg484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tftg256-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tftg256-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tftg256-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a35tftg256-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcpg236-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcpg236-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcpg236-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcpg236-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcsg324-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcsg324-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcsg324-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcsg324-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcsg325-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcsg325-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcsg325-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tcsg325-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tfgg484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tfgg484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tfgg484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tfgg484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tftg256-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tftg256-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tftg256-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7a50tftg256-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbg484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbg484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbg484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbg484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbg676-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbg676-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbg676-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbg676-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbv484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbv484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbv484-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbv484-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbv676-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbv676-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbv676-2L.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7k70tfbv676-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50csga324-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50csga324-1IL.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50csga324-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50fgga484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50fgga484-1IL.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50fgga484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50ftgb196-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50ftgb196-1IL.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7s50ftgb196-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z010clg225-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z010clg225-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z010clg225-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z010clg400-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z010clg400-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z010clg400-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z020clg400-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z020clg400-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z020clg400-3.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z020clg484-1.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z020clg484-2.bin</Path>
+            <Path fileType="data">/usr/share/nextpnr/xilinx-chipdb/xc7z020clg484-3.bin</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2025-02-26</Date>
+            <Version>20241011</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>marcus@infinitymdm.dev</Email>
+        </Update>
+    </History>
+</PISI>
