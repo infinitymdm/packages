@@ -14,13 +14,15 @@ builddeps  :
     - pkgconfig(eigen3)
     - pkgconfig(python3)
     - libboost-devel
-    - prjxray
+    - prjxray-db
     - yosys
 rundeps    :
-    - prjxray
+    - prjxray-db
 environment: |
     export XRAY_DB=%PREFIX%/share/xray/database
 setup      : |
+    patch -p1 -i $pkgfiles/85-improve-xdc-parsing.patch
+    patch -p1 -i $pkgfiles/02-args.patch
     %cmake_ninja \
         -DARCH=xilinx \
         -DCMAKE_BUILD_TYPE=None
@@ -39,6 +41,8 @@ build      : |
         ) &
     done
     wait
+    # python3 $workdir/xilinx/python/bbaexport.py --xray $XRAY_DB/artix7 --meta $sources/nextpnr-xilinx-meta.git/artix7 --device xc7a100tcsg324-1 --bba $workdir/blobs/xc7a100tcsg324-1.bba
+    # $workdir/solusBuildDir/bba/bbasm --le $workdir/blobs/xc7a100tcsg324-1.bba $workdir/xilinx-chipdb/xc7a100tcsg324-1.bin
 install    : |
     %ninja_install
 

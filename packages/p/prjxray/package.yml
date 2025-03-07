@@ -18,6 +18,10 @@ patterns   :
     - main : /*
     - db : /usr/share/xray/database
 setup      : |
+    # include fasm2frames in python package
+    mv utils/fasm2frames.py prjxray/.
+    sed -i 's/\(fasm2frames=\)utils/\1prjxray/' setup.py
+
     %cmake_ninja -DCMAKE_BUILD_TYPE='None'
 build      : |
     %ninja_build

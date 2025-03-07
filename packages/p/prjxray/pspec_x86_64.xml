@@ -41,6 +41,7 @@
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/__pycache__/bitstream.cpython-311.pyc</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/__pycache__/connections.cpython-311.pyc</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/__pycache__/db.cpython-311.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/__pycache__/fasm2frames.cpython-311.pyc</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/__pycache__/fasm_assembler.cpython-311.pyc</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/__pycache__/fasm_disassembler.cpython-311.pyc</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/__pycache__/grid.cpython-311.pyc</Path>
@@ -69,6 +70,7 @@
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/bitstream.py</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/connections.py</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/db.py</Path>
+            <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/fasm2frames.py</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/fasm_assembler.py</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/fasm_disassembler.py</Path>
             <Path fileType="library">/usr/lib/python3.11/site-packages/prjxray/grid.py</Path>
@@ -2094,7 +2096,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2025-02-26</Date>
+            <Date>2025-02-27</Date>
             <Version>20250215</Version>
             <Comment>Packaging update</Comment>
             <Name>Marcus Mellor</Name>
