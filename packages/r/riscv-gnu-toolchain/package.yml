@@ -1,0 +1,22 @@
+name       : riscv-gnu-toolchain
+version    : 2025.05.22
+release    : 1
+source     :
+    - git|https://github.com/riscv-collab/riscv-gnu-toolchain.git : 2025.05.22
+homepage   : https://github.com/riscv-collab/riscv-gnu-toolchain
+license    : GPL-2.0-or-later
+component  : programming
+summary    : GNU toolchain for RISC-V
+description: |
+    This is the RISC-V C and C++ cross compiler.
+builddeps  :
+    - pkgconfig(zlib)
+setup      : |
+    %reconfigure \
+        --enable-multilib \
+        --prefix=$installdir/%PREFIX% \
+        --with-system-zlib
+build      : |
+    %make
+install    : |
+    %make_install

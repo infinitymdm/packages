@@ -1,0 +1,17 @@
+as
+ld
+ld.bfd
+libcc1.so.0
+libcc1plugin.so.0
+libcp1plugin.so.0
+libdep.so
+liblto_plugin.so
+objdump
+readelf
+riscv64-unknown-elf-as
+riscv64-unknown-elf-elfedit
+riscv64-unknown-elf-gdb
+riscv64-unknown-elf-ld
+riscv64-unknown-elf-ld.bfd
+riscv64-unknown-elf-objdump
+riscv64-unknown-elf-readelf
