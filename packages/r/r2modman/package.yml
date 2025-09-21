@@ -1,8 +1,8 @@
 name       : r2modman
-version    : 3.2.3
-release    : 3
+version    : 3.2.6
+release    : 4
 source     :
-    - https://github.com/ebkr/r2modmanPlus/archive/refs/tags/v3.2.3.tar.gz : cf07b8683d61de8f71fce28fe5cb442ac16358b01142e2d49b455c0625ef43f0
+    - https://github.com/ebkr/r2modmanPlus/archive/refs/tags/v3.2.6.tar.gz : 2f6eb986e41c59da0128bb67ac4485573558a1e9442b412304334ca8987ed562
 homepage   : https://github.com/ebkr/r2modmanPlus
 license    : MIT
 component  : games
@@ -13,7 +13,7 @@ description: |
 builddeps  :
     - yarn
 setup      : |
-    sed -i "s/'AppImage', 'tar.gz', 'deb', 'rpm', 'pacman'/'dir'/g" quasar.conf.js
+    sed -i "s/'AppImage', 'tar.gz', 'deb', 'rpm', 'pacman'/'dir'/g" quasar.config.ts
     yarn install
 build      : |
     yarn build-linux
