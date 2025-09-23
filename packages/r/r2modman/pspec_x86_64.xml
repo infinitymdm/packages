@@ -109,7 +109,7 @@
     </Package>
     <History>
         <Update release="4">
-            <Date>2025-09-21</Date>
+            <Date>2025-09-23</Date>
             <Version>3.2.6</Version>
             <Comment>Packaging update</Comment>
             <Name>Marcus Mellor</Name>
