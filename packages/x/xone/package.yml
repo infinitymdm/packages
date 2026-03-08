@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : xone
-version    : 0.5.5
-release    : 104
+version    : 0.5.8
+release    : 105
 source     :
-    - https://github.com/dlundqvist/xone/archive/refs/tags/v0.5.5.tar.gz : ae14a424b47f5e077e76e1eaf3d1c5b23c229b2a44d0bfee114f8017793e0d3c
-    - git|https://github.com/forkymcforkface/xpad-noone : 8e903676dd9514c07ce5e06e43c5f7d8cc51cb7d
+    - https://github.com/dlundqvist/xone/archive/refs/tags/v0.5.8.tar.gz : f1905d5046ce79b94df0501045008203c4ae4ce6f43dbcf8bd04d7c944bf420e
+    - git|https://github.com/forkymcforkface/xpad-noone : 7b5361475c719b03b9e0152e44cf7fca0b85af60
 homepage   : https://github.com/dlundqvist/xone
 license    : GPL-2.0-or-later
 component  :
@@ -40,6 +40,7 @@ permanent  :
 rundeps    :
     - common :
         - cabextract
+        - libarchive-bin
         - upower
     - current :
         - xone-common
@@ -85,7 +86,7 @@ install    : |
     pushd xone
     install -D -d -m 00644 $installdir/usr/lib64/modules/$KVER/drivers/input/joystick
     install -D -m 00644 *.ko $installdir/usr/lib64/modules/$KVER/drivers/input/joystick/.
-    install -D -m 00644 install/modprobe.conf $installdir/usr/lib/modprobe.d/xone-blacklist.conf 
+    install -D -m 00644 install/modprobe.conf $installdir/usr/lib/modprobe.d/xone-blacklist.conf
     install -D -m 00755 install/firmware.sh $installdir/usr/bin/xone-get-firmware.sh
     popd
 
