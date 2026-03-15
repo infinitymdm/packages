@@ -21,13 +21,13 @@
         <PartOf>system.utils</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin/glances</Path>
-            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.0.dist-info/METADATA</Path>
-            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.0.dist-info/RECORD</Path>
-            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.0.dist-info/WHEEL</Path>
-            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.0.dist-info/entry_points.txt</Path>
-            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.0.dist-info/licenses/AUTHORS</Path>
-            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.0.dist-info/licenses/COPYING</Path>
-            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.0.dist-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.2.dist-info/METADATA</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.2.dist-info/RECORD</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.2.dist-info/WHEEL</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.2.dist-info/entry_points.txt</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.2.dist-info/licenses/AUTHORS</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.2.dist-info/licenses/COPYING</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances-4.5.2.dist-info/top_level.txt</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/__init__.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/__main__.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/__pycache__/__init__.cpython-312.opt-1.pyc</Path>
@@ -237,6 +237,10 @@
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_curses.cpython-312.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_curses_browser.cpython-312.opt-1.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_curses_browser.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_json_serializer.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_json_serializer.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_mcp.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_mcp.cpython-312.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_restful_api.cpython-312.opt-1.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_restful_api.cpython-312.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/__pycache__/glances_sparklines.cpython-312.opt-1.pyc</Path>
@@ -261,6 +265,8 @@
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/glances_colors.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/glances_curses.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/glances_curses_browser.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/glances_json_serializer.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/glances_mcp.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/glances_restful_api.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/glances_sparklines.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/outputs/glances_stdout.py</Path>
@@ -385,9 +391,12 @@
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/__pycache__/__init__.cpython-312.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/__pycache__/amd.cpython-312.opt-1.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/__pycache__/amd.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/__pycache__/intel.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/__pycache__/intel.cpython-312.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/__pycache__/nvidia.cpython-312.opt-1.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/__pycache__/nvidia.cpython-312.pyc</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/amd.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/intel.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/gpu/cards/nvidia.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/help/__init__.py</Path>
             <Path fileType="library">/usr/lib/python3.12/site-packages/glances/plugins/help/__pycache__/__init__.cpython-312.opt-1.pyc</Path>
@@ -531,9 +540,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="58">
-            <Date>2026-02-09</Date>
-            <Version>4.5.0</Version>
+        <Update release="59">
+            <Date>2026-03-15</Date>
+            <Version>4.5.2</Version>
             <Comment>Packaging update</Comment>
             <Name>Algent Albrahimi</Name>
             <Email>algent@protonmail.com</Email>
