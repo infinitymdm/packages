@@ -1,17 +1,18 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : ent
 version    : 0.1.0
-release    : 3
+release    : 4
 source     :
-    - git|https://github.com/aerynOS/ent.git : f9b0380aec4c0bf46c629f522b46438e47a0b573
+    # Commit date 2026-04-21
+    - git|https://github.com/aerynOS/ent.git : 99637f03b9e273a07af9c21e14455f7eb8377538
 homepage   : https://github.com/aerynOS/ent
 license    : MPL-2.0
-component  : programming.utils
+component  : programming.tools
 summary    : Tree management
 description: |
     ent is a tool for working with packaging recipes in git trees/monorepos. Primarily it is intended for use with Serpent OS packaging, and to a limited degree, Solus packaging.
 networking : true
-builddeps  :
+builddeps:
     - rust
 setup      : |
     %cargo_fetch
@@ -19,3 +20,4 @@ build      : |
     %cargo_build --no-default-features --features "ypkg"
 install    : |
     %cargo_install
+    %install_license LICENSE
