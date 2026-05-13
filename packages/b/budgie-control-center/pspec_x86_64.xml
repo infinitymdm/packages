@@ -3,8 +3,8 @@
         <Name>budgie-control-center</Name>
         <Homepage>https://buddiesofbudgie.org</Homepage>
         <Packager>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
         </Packager>
         <License>GPL-2.0-or-later</License>
         <PartOf>desktop.budgie</PartOf>
@@ -318,11 +318,11 @@
     </Package>
     <History>
         <Update release="35">
-            <Date>2026-04-29</Date>
+            <Date>2026-05-12</Date>
             <Version>2.1.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
         </Update>
     </History>
 </PISI>

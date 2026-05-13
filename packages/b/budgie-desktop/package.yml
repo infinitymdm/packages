@@ -67,6 +67,7 @@ setup      : |
     %patch -p1 -i ${pkgfiles}/budgie-10.10.2-screenshot-scale-fix.patch
     %patch -p1 -i ${pkgfiles}/budgie-10.10.2-fix-tasklist-minimize.patch
     %patch -p1 -i ${pkgfiles}/budgie-10.10.2-fix-tasklist-workspace-change.patch
+    %patch -p1 -i ${pkgfiles}/budgie-10.10.2-add-primary-monitor-support.patch
 
     %meson_configure \
         -Dgsd-libexecdir="/usr/lib64/budgie-session" \

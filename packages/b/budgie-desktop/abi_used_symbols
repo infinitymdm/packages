@@ -84,6 +84,8 @@ libgdk-3.so.0:gdk_keymap_get_for_display
 libgdk-3.so.0:gdk_keymap_get_num_lock_state
 libgdk-3.so.0:gdk_monitor_get_display
 libgdk-3.so.0:gdk_monitor_get_geometry
+libgdk-3.so.0:gdk_monitor_get_manufacturer
+libgdk-3.so.0:gdk_monitor_get_model
 libgdk-3.so.0:gdk_monitor_get_type
 libgdk-3.so.0:gdk_monitor_get_workarea
 libgdk-3.so.0:gdk_monitor_is_primary
@@ -480,6 +482,7 @@ libglib-2.0.so.0:g_key_file_load_from_data
 libglib-2.0.so.0:g_key_file_load_from_file
 libglib-2.0.so.0:g_key_file_new
 libglib-2.0.so.0:g_key_file_save_to_file
+libglib-2.0.so.0:g_key_file_set_integer
 libglib-2.0.so.0:g_key_file_set_string
 libglib-2.0.so.0:g_key_file_set_uint64
 libglib-2.0.so.0:g_key_file_unref
@@ -1400,11 +1403,13 @@ libxfce4windowing-0.so.0:xfw_application_get_class_id
 libxfce4windowing-0.so.0:xfw_application_get_icon
 libxfce4windowing-0.so.0:xfw_application_get_name
 libxfce4windowing-0.so.0:xfw_application_get_type
+libxfce4windowing-0.so.0:xfw_monitor_get_connector
 libxfce4windowing-0.so.0:xfw_monitor_get_gdk_monitor
 libxfce4windowing-0.so.0:xfw_monitor_get_logical_geometry
 libxfce4windowing-0.so.0:xfw_monitor_get_scale
 libxfce4windowing-0.so.0:xfw_screen_get_active_window
 libxfce4windowing-0.so.0:xfw_screen_get_default
+libxfce4windowing-0.so.0:xfw_screen_get_monitors
 libxfce4windowing-0.so.0:xfw_screen_get_primary_monitor
 libxfce4windowing-0.so.0:xfw_screen_get_windows
 libxfce4windowing-0.so.0:xfw_screen_get_workspace_manager

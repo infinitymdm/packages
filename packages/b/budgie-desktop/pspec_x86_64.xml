@@ -3,8 +3,8 @@
         <Name>budgie-desktop</Name>
         <Homepage>https://blog.buddiesofbudgie.org</Homepage>
         <Packager>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
         </Packager>
         <License>GPL-2.0-only</License>
         <License>LGPL-2.1-only</License>
@@ -343,11 +343,11 @@
     </Package>
     <History>
         <Update release="284">
-            <Date>2026-04-25</Date>
+            <Date>2026-05-12</Date>
             <Version>10.10.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
         </Update>
     </History>
 </PISI>

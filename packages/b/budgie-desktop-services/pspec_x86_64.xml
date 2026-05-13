@@ -3,8 +3,8 @@
         <Name>budgie-desktop-services</Name>
         <Homepage>https://buddiesofbudgie.org</Homepage>
         <Packager>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
         </Packager>
         <License>MPL-2.0</License>
         <PartOf>desktop.budgie</PartOf>
@@ -27,11 +27,11 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2026-04-20</Date>
+            <Date>2026-05-12</Date>
             <Version>1.0.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
         </Update>
     </History>
 </PISI>
