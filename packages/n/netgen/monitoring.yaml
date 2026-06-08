@@ -1,0 +1,6 @@
+releases:
+  id: 16150
+  rss: https://github.com/RTimothyEdwards/netgen/tags.atom
+# No known CPE, checked 2026-06-08
+security:
+  cpe: ~

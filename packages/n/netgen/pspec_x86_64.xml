@@ -1,0 +1,52 @@
+<PISI>
+    <Source>
+        <Name>netgen</Name>
+        <Homepage>http://opencircuitdesign.com/netgen/</Homepage>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>marcus@infinitymdm.dev</Email>
+        </Packager>
+        <License>GPL-1.0-or-later</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">Complete LVS tool for comparing SPICE or verilog netlists</Summary>
+        <Description xml:lang="en">NETGEN is a general-purpose netlist management system. It can read and write several netlist formats, including NTK (Caltech, CMU), WOMBAT (Berkeley), SIM (Berkeley), ACTEL (Actel Inc., Sunnyvale), and SPICE (Berkeley).
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>netgen</Name>
+        <Summary xml:lang="en">Complete LVS tool for comparing SPICE or verilog netlists</Summary>
+        <Description xml:lang="en">NETGEN is a general-purpose netlist management system. It can read and write several netlist formats, including NTK (Caltech, CMU), WOMBAT (Berkeley), SIM (Berkeley), ACTEL (Actel Inc., Sunnyvale), and SPICE (Berkeley).
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/netgen</Path>
+            <Path fileType="library">/usr/lib/netgen/doc/netgen.doc</Path>
+            <Path fileType="library">/usr/lib/netgen/ntk2adl.sh</Path>
+            <Path fileType="library">/usr/lib/netgen/python/consoletext.py</Path>
+            <Path fileType="library">/usr/lib/netgen/python/helpwindow.py</Path>
+            <Path fileType="library">/usr/lib/netgen/python/lvs_help.txt</Path>
+            <Path fileType="library">/usr/lib/netgen/python/lvs_manager.py</Path>
+            <Path fileType="library">/usr/lib/netgen/python/tksimpledialog.py</Path>
+            <Path fileType="library">/usr/lib/netgen/python/tooltip.py</Path>
+            <Path fileType="library">/usr/lib/netgen/python/treeviewsplit.py</Path>
+            <Path fileType="library">/usr/lib/netgen/spice</Path>
+            <Path fileType="library">/usr/lib/netgen/spice.bot</Path>
+            <Path fileType="library">/usr/lib/netgen/spice.top</Path>
+            <Path fileType="library">/usr/lib/netgen/tcl/console.tcl</Path>
+            <Path fileType="library">/usr/lib/netgen/tcl/netgen.tcl</Path>
+            <Path fileType="library">/usr/lib/netgen/tcl/netgenexec</Path>
+            <Path fileType="library">/usr/lib/netgen/tcl/tclnetgen.so</Path>
+            <Path fileType="library">/usr/lib/netgen/tcl/tkcon.tcl</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-06-09</Date>
+            <Version>1.5.320</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>marcus@infinitymdm.dev</Email>
+        </Update>
+    </History>
+</PISI>

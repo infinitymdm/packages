@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : netgen
+version    : 1.5.320
+release    : 1
+source     :
+    - https://github.com/RTimothyEdwards/netgen/archive/refs/tags/1.5.320.tar.gz : 5fd83c477108c3969bfdac828a9eb5b87b232663f88f5933e98f7eb59dc8f29c
+homepage   : http://opencircuitdesign.com/netgen/
+license    : GPL-1.0-or-later
+component  : office.scientific
+summary    : Complete LVS tool for comparing SPICE or verilog netlists
+description: |
+    NETGEN is a general-purpose netlist management system. It can read and write several netlist formats, including NTK (Caltech, CMU), WOMBAT (Berkeley), SIM (Berkeley), ACTEL (Actel Inc., Sunnyvale), and SPICE (Berkeley).
+clang      : true
+builddeps  :
+    - pkgconfig(tk)
+    - pkgconfig(x11)
+rundeps    :
+    - tk
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
