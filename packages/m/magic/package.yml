@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : magic
-version    : 8.3.524
+version    : 8.3.661
 release    : 2
 source     :
-    - git|https://github.com/RTimothyEdwards/magic.git : 8.3.524
+    - git|https://github.com/RTimothyEdwards/magic.git : 8.3.661
 homepage   : https://github.com/RTimothyEdwards/magic
 license    : HPND-UC
 component  : office.scientific
@@ -17,12 +17,13 @@ builddeps  :
     - pkgconfig(tk)
     - pkgconfig(zlib)
 rundeps    :
-    - tcl
     - tk
+environment: |
+    export CFLAGS="${CFLAGS} -std=c17 -D_DEFAULT_SOURCE=1"
 setup      : |
-    %apply_patches
     %configure
 build      : |
     %make
 install    : |
     %make_install
+    %install_license LICENSE
