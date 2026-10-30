@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : eqy
-version    : 0.67
-release    : 4
+version    : '0.70'
+release    : 5
 source     :
-    - https://github.com/YosysHQ/eqy/archive/refs/tags/v0.67.tar.gz : adfda8bd661b702c7128a3094c6727f4bbafbda6585cacb94010b67020226ddd
+    - https://github.com/YosysHQ/eqy/archive/refs/tags/v0.70.tar.gz : 8eb3e295c7d1e5708a5879188648371a1a8244be2403221622a953a70f22d412
 homepage   : https://yosyshq.readthedocs.io/projects/eqy/en/latest/
 license    : ISC
 component  : office.scientific
@@ -23,3 +23,4 @@ build      : |
     %make
 install    : |
     %make_install
+    %install_license COPYING
