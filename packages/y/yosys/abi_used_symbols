@@ -10,7 +10,9 @@ libc.so.6:__isoc23_fscanf
 libc.so.6:__isoc23_scanf
 libc.so.6:__isoc23_sscanf
 libc.so.6:__isoc23_strtol
+libc.so.6:__isoc23_strtoll
 libc.so.6:__isoc23_strtoul
+libc.so.6:__isoc23_strtoull
 libc.so.6:__libc_single_threaded
 libc.so.6:__libc_start_main
 libc.so.6:__memcpy_chk
@@ -19,6 +21,7 @@ libc.so.6:__memset_chk
 libc.so.6:__open_2
 libc.so.6:__overflow
 libc.so.6:__read_chk
+libc.so.6:__readlink_chk
 libc.so.6:__stack_chk_fail
 libc.so.6:__strcat_chk
 libc.so.6:__strcpy_chk
@@ -37,18 +40,23 @@ libc.so.6:alarm
 libc.so.6:alphasort
 libc.so.6:asctime
 libc.so.6:calloc
+libc.so.6:chmod
 libc.so.6:clearerr
 libc.so.6:clock
 libc.so.6:clock_gettime
 libc.so.6:close
 libc.so.6:connect
+libc.so.6:ctime_r
 libc.so.6:dlclose
 libc.so.6:dlerror
 libc.so.6:dlopen
+libc.so.6:dlsym
 libc.so.6:dup
 libc.so.6:dup2
 libc.so.6:environ
+libc.so.6:execl
 libc.so.6:execv
+libc.so.6:execvp
 libc.so.6:exit
 libc.so.6:fclose
 libc.so.6:fcntl
@@ -60,6 +68,7 @@ libc.so.6:fflush_unlocked
 libc.so.6:fgetc
 libc.so.6:fgets
 libc.so.6:fileno
+libc.so.6:flock
 libc.so.6:flockfile
 libc.so.6:fnmatch
 libc.so.6:fopen
@@ -78,6 +87,7 @@ libc.so.6:funlockfile
 libc.so.6:fwrite
 libc.so.6:getc
 libc.so.6:getenv
+libc.so.6:geteuid
 libc.so.6:getpagesize
 libc.so.6:getpid
 libc.so.6:getppid
@@ -86,6 +96,7 @@ libc.so.6:getrusage
 libc.so.6:gettimeofday
 libc.so.6:glob
 libc.so.6:globfree
+libc.so.6:ioctl
 libc.so.6:isalnum
 libc.so.6:isalpha
 libc.so.6:isatty
@@ -95,7 +106,9 @@ libc.so.6:isspace
 libc.so.6:isupper
 libc.so.6:isxdigit
 libc.so.6:localtime
+libc.so.6:localtime_r
 libc.so.6:lseek64
+libc.so.6:lstat
 libc.so.6:malloc
 libc.so.6:memchr
 libc.so.6:memcmp
@@ -171,6 +184,7 @@ libc.so.6:strcat
 libc.so.6:strchr
 libc.so.6:strcmp
 libc.so.6:strcpy
+libc.so.6:strcspn
 libc.so.6:strdup
 libc.so.6:strerror
 libc.so.6:strftime
@@ -197,6 +211,13 @@ libc.so.6:vsnprintf
 libc.so.6:waitpid
 libc.so.6:wcslen
 libc.so.6:write
+libffi.so.8:ffi_call
+libffi.so.8:ffi_prep_cif
+libffi.so.8:ffi_type_double
+libffi.so.8:ffi_type_float
+libffi.so.8:ffi_type_pointer
+libffi.so.8:ffi_type_sint32
+libffi.so.8:ffi_type_sint64
 libgcc_s.so.1:_Unwind_Resume
 libgcc_s.so.1:__udivti3
 libm.so.6:acos
@@ -459,7 +480,6 @@ libstdc++.so.6:_ZNSi3getERc
 libstdc++.so.6:_ZNSi3getEv
 libstdc++.so.6:_ZNSi4peekEv
 libstdc++.so.6:_ZNSi4readEPcl
-libstdc++.so.6:_ZNSi5seekgESt4fposI11__mbstate_tE
 libstdc++.so.6:_ZNSi5seekgElSt12_Ios_Seekdir
 libstdc++.so.6:_ZNSi5tellgEv
 libstdc++.so.6:_ZNSi5ungetEv
@@ -488,6 +508,7 @@ libstdc++.so.6:_ZNSt10filesystem12current_pathB5cxx11ERSt10error_code
 libstdc++.so.6:_ZNSt10filesystem12current_pathB5cxx11Ev
 libstdc++.so.6:_ZNSt10filesystem12current_pathERKNS_7__cxx114pathERSt10error_code
 libstdc++.so.6:_ZNSt10filesystem16weakly_canonicalERKNS_7__cxx114pathERSt10error_code
+libstdc++.so.6:_ZNSt10filesystem6renameERKNS_7__cxx114pathES3_RSt10error_code
 libstdc++.so.6:_ZNSt10filesystem6statusERKNS_7__cxx114pathERSt10error_code
 libstdc++.so.6:_ZNSt10filesystem7__cxx1110hash_valueERKNS0_4pathE
 libstdc++.so.6:_ZNSt10filesystem7__cxx1118directory_iterator9incrementERSt10error_code
@@ -501,6 +522,7 @@ libstdc++.so.6:_ZNSt10filesystem7__cxx114path9_M_appendESt17basic_string_viewIcS
 libstdc++.so.6:_ZNSt10filesystem7__cxx114pathaSERKS1_
 libstdc++.so.6:_ZNSt10filesystem7__cxx114pathdVERKS1_
 libstdc++.so.6:_ZNSt10filesystem8absoluteERKNS_7__cxx114pathE
+libstdc++.so.6:_ZNSt10filesystem8absoluteERKNS_7__cxx114pathERSt10error_code
 libstdc++.so.6:_ZNSt10filesystem9proximateERKNS_7__cxx114pathES3_
 libstdc++.so.6:_ZNSt10filesystem9proximateERKNS_7__cxx114pathES3_RSt10error_code
 libstdc++.so.6:_ZNSt11logic_errorC1EOS_
