@@ -1,31 +1,36 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : nextpnr
-version    : '0.10'
-release    : 9
+version    : 0.11.1
+release    : 10
 source     :
-    - https://github.com/YosysHQ/nextpnr/archive/refs/tags/nextpnr-0.10.tar.gz : 374393094cdf7b2aae415cebf0994840b4a355bb95e89c683ef19f95f0b14dc2
+    - https://github.com/YosysHQ/nextpnr/archive/refs/tags/nextpnr-0.11.1.tar.gz :
+        2af682d94abf3f3e116f2fad36dc7db314fa93bfbb185e63619f2ec4f5fe40dc
 homepage   : https://github.com/YosysHQ/nextpnr
 license    : ISC
 component  : office.scientific
 summary    : A portable FPGA place and route tool.
 description: |
     nextpnr is a vendor-neutral, timing-driven, FOSS FPGA placement and routing tool.
+clang      : true
 patterns   :
     - generic : /usr/bin/*-generic
     - ice40 : /usr/bin/*-ice40
 builddeps  :
-    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt6Core)
     - pkgconfig(eigen3)
+    - pkgconfig(pybind11)
     - pkgconfig(python3)
     - icestorm
     - libboost-devel
+    - libomp
     - yosys
 rundeps    :
     - ice40 : icestorm
 setup      : |
     %cmake_ninja \
         -DARCH="ice40;generic" \
-        -DBUILD_GUI=ON
+        -DBUILD_GUI=ON \
+        -DUSE_OPENMP=ON
 build      : |
     %ninja_build
 install    : |
