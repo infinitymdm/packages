@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : yosys
-version    : 0.67
-release    : 30
+version    : 0.70
+release    : 31
 source     :
-    - git|https://github.com/YosysHQ/yosys.git : v0.67
+    - git|https://github.com/YosysHQ/yosys.git : v0.70
 homepage   : https://yosyshq.net/yosys/
 license    : ISC
 component  : office.scientific
