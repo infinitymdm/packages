@@ -4348,7 +4348,7 @@
 		<Package>budgie-screenshot-applet-dbginfo</Package>
 		<Package>budgie-restart-applet</Package>
 		<Package>budgie-shutdown-timer</Package>
-		
+
 		<Package>pulseaudio-equalizer</Package>
 		<Package>pulseaudio-module-jack</Package>
 		<Package>pulseaudio-module-jack-32bit</Package>
@@ -4564,7 +4564,7 @@
 
 		<!-- No active development -->
 		<Package>bookworm</Package>
-		<Package>bookworm-dbginfo</Package>		
+		<Package>bookworm-dbginfo</Package>
 
 		<!-- No active development -->
 		<Package>easyssh</Package>
@@ -4692,5 +4692,9 @@
 		<Package>kwin-x11-dbginfo</Package>
 		<Package>wacomtablet</Package>
 		<Package>wacomtablet-dbginfo</Package>
+
+		<!-- Included in yosys by default since 0.67 -->
+		<Package>yosys-slang</Package>
+		<Package>yosys-slang-dbginfo</Package>
 	</Obsoletes>
 </PISI>

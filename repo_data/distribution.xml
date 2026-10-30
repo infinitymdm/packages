@@ -3309,7 +3309,7 @@
 		<Package>gjitenkai</Package>
 		<Package>gjitenkai-dbginfo</Package>
 		<Package>bookworm</Package>
-		<Package>bookworm-dbginfo</Package>		
+		<Package>bookworm-dbginfo</Package>
 		<Package>easyssh</Package>
 		<Package>easyssh-dbginfo</Package>
 		<Package>llvm-clang</Package>
@@ -3391,5 +3391,7 @@
 		<Package>kwin-x11-dbginfo</Package>
 		<Package>wacomtablet</Package>
 		<Package>wacomtablet-dbginfo</Package>
+		<Package>yosys-slang</Package>
+		<Package>yosys-slang-dbginfo</Package>
 	</Obsoletes>
 </PISI>
